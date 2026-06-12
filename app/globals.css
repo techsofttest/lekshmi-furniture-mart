@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Warm Minimalist Foundation */
+  --background: #FCFAF8;
+  --foreground: #2A1C14;
+
+  /* Brand Palette from Logo */
+  --brand-dark: #592915;
+  --brand-gold: #B28544;
+  --brand-light: #F4ECE1;
+  /* A gentle wash of the gold for subtle card backgrounds */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-light: var(--brand-light);
+
+  /* Mapping to Next.js custom fonts */
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Premium Dark Mode: Deep Espresso instead of flat black (#0a0a0a) */
+    --background: #1A120E;
+    --foreground: #F5EFEB;
+    /* In dark mode, the gold becomes the primary readable brand color */
+    --brand-dark: #B28544;
+    --brand-gold: #E6D5B8;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Default to the clean sans-serif for UI elements */
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  /* Force all headings to use the elegant serif font and the primary dark color */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif), serif;
+    color: var(--brand-dark);
+    font-weight: 600;
+  }
 }
