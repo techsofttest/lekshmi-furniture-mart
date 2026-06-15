@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 const highlightsData = [
   {
     icon: Hammer,
-    title: "Custom Furniture",
-    description: "Tailored to your style. We handcraft bespoke wooden furniture designed to fit your precise space and utility needs.",
+    title: "Customized Designs",
+    description: "Manufactured exactly to your designs, measurements, and models. Not limited to what's displayed.",
   },
   {
     icon: ShieldCheck,
-    title: "Premium Quality",
-    description: "Built to last. Each piece uses heritage-grade solid woods (teak/rosewood) and undergoes strict quality inspections.",
+    title: "Wall-Mounted Furniture",
+    description: "Explore our space-saving wall-mounted furniture models (photos pending).",
   },
   {
     icon: Sparkles,
@@ -95,7 +95,7 @@ export default function Highlights() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: idx * 0.15 }}
               >
-                {/* Simple Luxury Outline Icon */}
+                {/* Simple Outline Icon */}
                 <div className="w-12 h-12 mb-4 flex items-center justify-center text-[#B28544] group-hover:scale-105 transition-transform duration-500">
                   <Icon size={32} strokeWidth={1.2} />
                 </div>

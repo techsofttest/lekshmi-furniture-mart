@@ -10,25 +10,21 @@ import { motion } from "framer-motion";
 const topSellers = [
   {
     title: "The Royal Teak Bed",
-    price: "Starting from ₹45,000",
     image: "/products/bed.jpg",
     href: "/product/royal-teak-bed"
   },
   {
     title: "Classic Rosewood Sofa",
-    price: "Starting from ₹68,000",
     image: "/products/vintage-sofa.jpg",
     href: "/product/classic-rosewood-sofa"
   },
   {
     title: "Artisan Dining Set",
-    price: "Starting from ₹85,000",
     image: "/products/dining-table.jpg",
     href: "/product/artisan-dining"
   },
   {
     title: "Minimalist Console",
-    price: "Starting from ₹18,500",
     image: "/products/console2.jpg",
     href: "/product/minimalist-console"
   },
@@ -67,7 +63,6 @@ export default function ProductList() {
             >
               <Card
                 title={product.title}
-                price={product.price}
                 image={product.image}
                 href={product.href}
               />

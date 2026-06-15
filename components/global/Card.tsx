@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 interface CardProps {
   title: string;
-  price: string;
+  price?: string;
   image: string;
   href: string;
 }
@@ -60,9 +60,11 @@ export default function Card({ title, price, image, href }: CardProps) {
         <h3 className="text-[#592915] font-serif text-xl md:text-2xl mb-2 transition-colors duration-500 group-hover:text-[#B28544]">
           {title}
         </h3>
-        <p className="text-[#2A1C14]/70 font-sans text-xs tracking-[0.15em] uppercase font-bold">
-          {price}
-        </p>
+        {price && (
+          <p className="text-[#2A1C14]/70 font-sans text-xs tracking-[0.15em] uppercase font-bold">
+            {price}
+          </p>
+        )}
       </div>
     </Link>
   );

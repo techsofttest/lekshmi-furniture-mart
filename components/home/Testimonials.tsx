@@ -147,7 +147,7 @@ export default function Testimonials() {
         </div>
 
         {/* Separator Line */}
-        <div className="w-full max-w-xs mx-auto h-[1px] bg-[#B28544]/20 mt-12" />
+        {/* <div className="w-full max-w-xs mx-auto h-[1px] bg-[#B28544]/20 mt-12" /> */}
 
         {/* Indicators */}
         <div className="flex items-center justify-center gap-3 mt-8">

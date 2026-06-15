@@ -21,40 +21,6 @@ import {
 // 1. Navigation Data Structure: Added all 11 requested categories with populated sub-categories and items.
 const navigationData = [
     {
-        label: "Sofas & Recliners",
-        icon: Armchair,
-        href: "/category/sofas-recliners",
-        dropdown: {
-            columns: [
-                {
-                    title: "Sofas",
-                    items: [
-                        { name: "Wooden Sofas", href: "/category/sofas/wooden" },
-                        { name: "Fabric Sofas", href: "/category/sofas/fabric" },
-                        { name: "L-Shape Sectionals", href: "/category/sofas/l-shape" },
-                        { name: "Sofa Cum Beds", href: "/category/sofas/sofa-beds" },
-                    ],
-                },
-                {
-                    title: "Recliners & More",
-                    items: [
-                        { name: "Manual Recliners", href: "/category/recliners/manual" },
-                        { name: "Motorized Recliners", href: "/category/recliners/motorized" },
-                        { name: "Lounge Chairs", href: "/category/recliners/lounge" },
-                        { name: "Pouffes & Ottomans", href: "/category/recliners/ottomans" },
-                    ],
-                },
-            ],
-            promo: {
-                title: "Ultimate Comfort",
-                subtitle: "Premium seating solutions",
-                price: "Starting from ₹15,000",
-                image: "/custom-product/boat.png",
-                href: "/category/sofas-recliners/premium",
-            },
-        },
-    },
-    {
         label: "Living",
         icon: Tv,
         href: "/category/living",
@@ -82,7 +48,7 @@ const navigationData = [
             promo: {
                 title: "Signature Living",
                 subtitle: "Custom Teak Consoles",
-                price: "Starting from ₹18,500",
+                price: "Custom Crafted",
                 image: "/custom-product/c-chair.png",
                 href: "/category/living/custom",
             },
@@ -123,9 +89,9 @@ const navigationData = [
         },
     },
     {
-        label: "Dining & Kitchen",
+        label: "Dining",
         icon: Utensils,
-        href: "/category/dining-kitchen",
+        href: "/category/dining",
         dropdown: {
             columns: [
                 {
@@ -135,15 +101,6 @@ const navigationData = [
                         { name: "6 Seater Dining Sets", href: "/category/dining/6-seater" },
                         { name: "Dining Tables", href: "/category/dining/tables" },
                         { name: "Dining Chairs & Benches", href: "/category/dining/chairs" },
-                    ],
-                },
-                {
-                    title: "Kitchen & Storage",
-                    items: [
-                        { name: "Crockery Units", href: "/category/dining/crockery" },
-                        { name: "Kitchen Cabinets", href: "/category/kitchen/cabinets" },
-                        { name: "Bar Cabinets", href: "/category/dining/bar" },
-                        { name: "Kitchen Islands", href: "/category/kitchen/islands" },
                     ],
                 },
             ],
@@ -250,7 +207,7 @@ const navigationData = [
             promo: {
                 title: "Timeless Pillars",
                 subtitle: "Handcrafted Wood Pillars",
-                price: "Starting from ₹25,000",
+                price: "Discover Options",
                 image: "/custom-product/cupbord.png", // Using a fallback promo image
                 href: "/category/pillars/collection",
             },
@@ -287,6 +244,38 @@ const navigationData = [
                 price: "Refresh Your Space",
                 image: "/promo/bedroom-promo.jpg", // Using a fallback promo image
                 href: "/category/furnishing/collections",
+            },
+        },
+    },
+    {
+        label: "Office Room",
+        icon: BookOpen,
+        href: "/category/office",
+        dropdown: {
+            columns: [
+                {
+                    title: "Desks & Workstations",
+                    items: [
+                        { name: "Executive Desks", href: "/category/office/desks" },
+                        { name: "Computer Tables", href: "/category/office/computer" },
+                        { name: "Standing Desks", href: "/category/office/standing" },
+                    ],
+                },
+                {
+                    title: "Office Seating",
+                    items: [
+                        { name: "Ergonomic Chairs", href: "/category/office/chairs" },
+                        { name: "Visitor Seating", href: "/category/office/visitor" },
+                        { name: "Storage Cabinets", href: "/category/office/storage" },
+                    ],
+                },
+            ],
+            promo: {
+                title: "Professional Spaces",
+                subtitle: "Premium Work Environments",
+                price: "View Collection",
+                image: "/custom-product/cupbord.png", // Fallback
+                href: "/category/office/premium",
             },
         },
     },

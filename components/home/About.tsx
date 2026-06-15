@@ -9,18 +9,18 @@ import { motion } from "framer-motion";
 const keyValues = [
   {
     icon: CreditCard,
-    title: "Flexible EMI Options",
-    description: "Easy monthly installments tailored to your budget."
+    title: "Payment Options",
+    description: "50% Advance Payment / 50% Payment upon Delivery."
   },
   {
     icon: ShieldCheck,
-    title: "Quality Assurance",
-    description: "Each bespoke piece is backed by our guarantee."
+    title: "Customised Designs",
+    description: "Manufactured exactly to your designs and specific measurements."
   },
   {
     icon: Truck,
-    title: "Free Kerala Delivery",
-    description: "Seamless, careful handling to your doorstep."
+    title: "Delivery & Installation",
+    description: "Factory pick-up, or delivery & on-site installation available (charges apply)."
   },
 ];
 
@@ -109,15 +109,15 @@ export default function AboutSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">Est. 1990</span>
+            <span className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">The Lekshmi Experience</span>
             <h2 className="text-3xl md:text-4xl font-serif text-[#592915] mb-4 leading-tight inline-block relative">
-              Legacy of Craftsmanship & Uncompromising Elegance
+              Bespoke Craftsmanship, Tailored for You
             </h2>
             <p className="text-[#2A1C14]/70 font-sans text-lg mb-8 leading-relaxed max-w-2xl mt-6">
-              Since 1990, Lekshmi Furniture Mart has been dedicated to crafting comfort and elegance for homes across India. Our journey, rooted in Kerala, is a testament to over three decades of artisanal excellence. From the selection of premium woods to the final meticulous finish, our curated collections blend timeless design with modern utility. We specialise in bespoke furniture, allowing you to bring your unique vision to life, tailored precisely to your space and requirements.
+              We are dedicated to crafting heirloom-quality furniture that transforms your living spaces. Our commitment to excellence ensures every piece is built to your exact specifications using premium materials, seamless service, and uncompromising attention to detail. Experience the art of truly bespoke design.
             </p>
-            <SecondaryButton href="/gallery" variant="dark">
-              Our Story
+            <SecondaryButton href="/customization" variant="dark">
+              Explore Services
             </SecondaryButton>
           </motion.div>
 

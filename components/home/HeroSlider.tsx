@@ -13,14 +13,14 @@ const slides = [
   {
     id: 1,
     title: "Crafting Your\nPerfect Living Space",
-    description: "Bespoke wooden sofas and sectionals designed for ultimate comfort and timeless elegance, tailored to your home's unique character.",
+    description: "Bespoke wooden living room furniture designed for ultimate comfort and timeless elegance, tailored to your home's unique character.",
     image: "/banner/banner-1.png",
     cta: "Custom Living",
     href: "/category/living",
   },
   {
     id: 2,
-    title: "Heritage Grade\nBedroom Luxury",
+    title: "Heritage Grade\nBedroom Elegance",
     description: "Handcrafted solid teak and rosewood beds that bring warmth, history, and uncompromising quality to your personal sanctuary.",
     image: "/banner/banner-6.png",
     cta: "Explore Bedrooms",
@@ -103,7 +103,7 @@ export default function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
-      {/* Minimal Luxury Slider Indicators */}
+      {/* Minimal Slider Indicators */}
       <div className="absolute bottom-10 left-6 lg:left-12 xl:left-24 flex items-center gap-8 z-20">
         <span className="text-[#F4ECE1]/60 text-xs font-light font-sans tracking-[0.2em]">0{current + 1}</span>
         <div className="flex gap-4">
