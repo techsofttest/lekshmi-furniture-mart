@@ -12,7 +12,7 @@ const highlightsData = [
   {
     icon: ShieldCheck,
     title: "Wall-Mounted Furniture",
-    description: "Explore our space-saving wall-mounted furniture models (photos pending).",
+    description: "Explore our space-saving wall-mounted furniture models.",
   },
   {
     icon: Sparkles,

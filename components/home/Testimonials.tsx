@@ -132,7 +132,7 @@ export default function Testimonials() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="text-center">
+                  <div className="text-left">
                     <h4 className="font-serif text-[#592915] text-lg">
                       {testimonials[currentIndex].name}
                     </h4>
