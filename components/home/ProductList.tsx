@@ -1,7 +1,9 @@
 'use client';
 
+import { useState, useRef, useEffect } from "react";
 import Card from "@/components/global/Card";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, animate, useAnimationFrame } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 /**
  * Replace these placeholder images with actual high-res photos 
@@ -30,10 +32,60 @@ const topSellers = [
   },
 ];
 
+// Duplicate for seamless loop
+const items = [...topSellers, ...topSellers];
+
 export default function ProductList() {
+  const x = useMotionValue(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const [carouselWidth, setCarouselWidth] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [halfWidth, setHalfWidth] = useState(0);
+
+  const [isHovered, setIsHovered] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const calculateWidths = () => {
+      if (carouselRef.current && containerRef.current) {
+        const fullWidth = carouselRef.current.scrollWidth;
+        setCarouselWidth(fullWidth);
+        setContainerWidth(containerRef.current.offsetWidth);
+        setHalfWidth((fullWidth + 16) / 2); // 16px is gap-4
+      }
+    };
+
+    calculateWidths();
+    window.addEventListener("resize", calculateWidths);
+    return () => window.removeEventListener("resize", calculateWidths);
+  }, []);
+
+  useAnimationFrame((t, delta) => {
+    if (isHovered || isDragging || isAnimating || x.isAnimating() || !halfWidth) return;
+    let currentX = x.get();
+    currentX -= Math.min(delta, 50) * 0.05;
+    if (currentX <= -halfWidth) currentX += halfWidth;
+    x.set(currentX);
+  });
+
+  const handleNav = (direction: "prev" | "next") => {
+    if (!halfWidth) return;
+    setIsAnimating(true);
+    const scrollAmount = containerWidth * 0.7;
+    const currentX = x.get();
+    const targetX = direction === "prev" ? currentX + scrollAmount : currentX - scrollAmount;
+    animate(x, targetX, {
+      type: "spring", stiffness: 400, damping: 50,
+      onComplete: () => setIsAnimating(false)
+    });
+  };
+
   return (
     <section className="py-24 bg-white w-full border-t border-[#F4ECE1]">
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16">
 
         {/* Editorial Section Header */}
         <motion.div
@@ -43,31 +95,56 @@ export default function ProductList() {
           transition={{ duration: 0.8 }}
           className="mb-16 flex flex-col items-center text-center"
         >
-          <span className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">
+          <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.2em] font-bold mb-4 block">
             Most Loved
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif text-[#592915] mb-4 inline-block relative">
+          <h2 className="text-xl md:text-2xl font-serif text-[#592915] mb-4 inline-block relative">
             Signature Masterpieces
           </h2>
         </motion.div>
 
-        {/* 4-Column Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
-          {topSellers.map((product, idx) => (
+        {/* Carousel */}
+        <div
+          className="relative w-full"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {/* Controls */}
+          <button
+            onClick={() => handleNav("prev")}
+            className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-8 z-20 w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center text-[#592915] hover:bg-white transition-all"
+            aria-label="Previous Product"
+          >
+            <ChevronLeft size={28} />
+          </button>
+          <button
+            onClick={() => handleNav("next")}
+            className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-8 z-20 w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center text-[#592915] hover:bg-white transition-all"
+            aria-label="Next Product"
+          >
+            <ChevronRight size={28} />
+          </button>
+
+          {/* Carousel Track */}
+          <motion.div ref={containerRef} className="overflow-hidden cursor-grab active:cursor-grabbing">
             <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: idx * 0.15 }}
+              ref={carouselRef}
+              className="flex gap-4 w-max"
+              style={{ x }}
+              drag="x"
+              dragConstraints={{ right: 0, left: Math.min(0, -(carouselWidth - containerWidth)) }}
+              dragElastic={0.1}
+              onDragStart={() => setIsDragging(true)}
+              onDragEnd={() => setIsDragging(false)}
+              whileTap={{ cursor: "grabbing" }}
             >
-              <Card
-                title={product.title}
-                image={product.image}
-                href={product.href}
-              />
+              {items.map((product, idx) => (
+                <div key={idx} className="w-[400px] sm:w-[450px] shrink-0">
+                  <Card title={product.title} image={product.image} href={product.href} />
+                </div>
+              ))}
             </motion.div>
-          ))}
+          </motion.div>
         </div>
 
       </div>

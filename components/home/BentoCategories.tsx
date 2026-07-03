@@ -18,7 +18,7 @@ function ParallaxImage({ src, alt }: ParallaxImageProps) {
     target: containerRef,
     offset: ["start end", "end start"],
   });
-  
+
   // Maps the scroll progress to a y-axis shift (moving from -10% to 10%)
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
@@ -29,6 +29,7 @@ function ParallaxImage({ src, alt }: ParallaxImageProps) {
           src={src}
           alt={alt}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transform group-hover:scale-105 transition-transform duration-[1500ms] ease-out"
         />
       </motion.div>
@@ -39,28 +40,28 @@ function ParallaxImage({ src, alt }: ParallaxImageProps) {
 export default function BentoCategories() {
   return (
     <section className="py-24 bg-[#FCF8F3] w-full relative overflow-hidden">
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24 relative z-20">
-        
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 relative z-20">
+
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-serif text-[#592915] mb-4 inline-block relative">
+          <h2 className="text-xl md:text-2xl font-serif text-[#592915] mb-4 inline-block relative">
             Our Collections
           </h2>
         </motion.div>
 
         {/* The Grid: 3 columns on row 1, 2 columns on row 2 */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 xl:gap-8">
-          
+
           {/* Item 1: THE LIVING EDIT (Row 1, Col 1-2) */}
           <MotionLink
-            href="/category/living"
-            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[260px] sm:h-[300px] md:h-[320px] rounded-sm block"
+            href="/gallery?filter=living"
+            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[300px] sm:h-[350px] md:h-[400px] rounded-sm block"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -77,8 +78,8 @@ export default function BentoCategories() {
 
           {/* Item 2: THE DINING SPACE (Row 1, Col 3-4) */}
           <MotionLink
-            href="/category/dining"
-            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[260px] sm:h-[300px] md:h-[320px] rounded-sm block"
+            href="/gallery?filter=dining"
+            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[300px] sm:h-[350px] md:h-[400px] rounded-sm block"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -95,8 +96,8 @@ export default function BentoCategories() {
 
           {/* Item 3: THE BEDROOM SERIES (Row 1, Col 5-6) */}
           <MotionLink
-            href="/category/bedroom"
-            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[260px] sm:h-[300px] md:h-[320px] rounded-sm block"
+            href="/gallery?filter=bedroom"
+            className="relative overflow-hidden group col-span-1 md:col-span-2 h-[300px] sm:h-[350px] md:h-[400px] rounded-sm block"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -113,8 +114,8 @@ export default function BentoCategories() {
 
           {/* Item 4: OFFICE ROOM (Row 2, Col 1-3) */}
           <MotionLink
-            href="/category/office"
-            className="relative overflow-hidden group col-span-1 md:col-span-3 h-[260px] sm:h-[300px] md:h-[320px] rounded-sm block"
+            href="/gallery?filter=custom"
+            className="relative overflow-hidden group col-span-1 md:col-span-3 h-[300px] sm:h-[350px] md:h-[400px] rounded-sm block"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -131,8 +132,8 @@ export default function BentoCategories() {
 
           {/* Item 5: RESORT & HERITAGE (Row 2, Col 4-6) */}
           <MotionLink
-            href="/projects/heritage"
-            className="relative overflow-hidden group col-span-1 md:col-span-3 h-[260px] sm:h-[300px] md:h-[320px] rounded-sm block"
+            href="/projects"
+            className="relative overflow-hidden group col-span-1 md:col-span-3 h-[300px] sm:h-[350px] md:h-[400px] rounded-sm block"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}

@@ -52,21 +52,21 @@ export default function Testimonials() {
 
   return (
     <section className="py-20 md:py-28 bg-[#FCFAF8] w-full relative overflow-hidden">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-16 flex flex-col items-center text-center"
+          className="mb-4 flex flex-col items-center text-center"
         >
-          <span className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">
+          <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.2em] font-bold mb-4 block">
             What Our Clients Say
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif text-[#592915] mb-4 inline-block relative pb-4">
+          <h2 className="text-xl md:text-2xl font-serif text-[#592915] mb-4 inline-block relative pb-4">
             Trusted Since 1990
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[1px] bg-[#B28544]/40" />
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[1px] bg-[#592915]/40" />
           </h2>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Testimonials() {
           {/* Left Control */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#B28544] transition-colors duration-300 z-20 p-2"
+            className="absolute left-0 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
             aria-label="Previous Testimonial"
           >
             <ChevronLeft size={48} strokeWidth={1} />
@@ -84,7 +84,7 @@ export default function Testimonials() {
           {/* Right Control */}
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#B28544] transition-colors duration-300 z-20 p-2"
+            className="absolute right-0 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
             aria-label="Next Testimonial"
           >
             <ChevronRight size={48} strokeWidth={1} />
@@ -113,19 +113,19 @@ export default function Testimonials() {
                     <Star
                       key={i}
                       size={20}
-                      className="text-[#B28544] fill-[#B28544]"
+                      className="text-[#592915] fill-[#592915]"
                     />
                   ))}
                 </div>
 
                 {/* Text */}
-                <p className="text-[#2A1C14]/90 font-serif text-xl md:text-2xl lg:text-3xl mb-12 leading-relaxed italic text-center">
+                <p className="text-[#2A1C14]/70 font-sans text-xl md:text-normal leading-relaxed italic mb-12 text-center">
                   "{testimonials[currentIndex].text}"
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center justify-center gap-4">
-                  <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#B28544]">
+                  <div className="relative w-14 h-14 rounded-full overflow-hidden">
                     <img
                       src={testimonials[currentIndex].avatar}
                       alt={testimonials[currentIndex].name}
@@ -136,7 +136,7 @@ export default function Testimonials() {
                     <h4 className="font-serif text-[#592915] text-lg">
                       {testimonials[currentIndex].name}
                     </h4>
-                    <p className="text-[#2A1C14]/60 text-sm font-sans">
+                    <p className="text-[#2A1C14]/70 font-sans text-xs">
                       {testimonials[currentIndex].location}
                     </p>
                   </div>
@@ -156,7 +156,7 @@ export default function Testimonials() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-[1px] transition-all duration-500 ${index === currentIndex
-                ? "bg-[#B28544] w-8"
+                ? "bg-[#592915] w-8"
                 : "bg-[#592915]/30 w-4 hover:bg-[#592915]/50"
                 }`}
               aria-label={`Go to testimonial ${index + 1}`}

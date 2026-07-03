@@ -15,15 +15,16 @@ export default function CTA() {
   const y = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-[#1A120E] w-full relative overflow-hidden border-t border-[#B28544]/20">
+    <section ref={sectionRef} className="py-24 md:py-32 bg-[#1A120E] w-full relative overflow-hidden border-t border-white/10">
 
       {/* Background Image with Low Opacity */}
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-50 pointer-events-none overflow-hidden">
         <motion.div style={{ y }} className="absolute inset-x-0 -top-[15%] h-[130%] w-full">
           <Image
-            src="/banner/cta-bg.jpg"
+            src="/section-bg/cta2.png"
             alt="Call to action background"
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </motion.div>
@@ -62,39 +63,28 @@ export default function CTA() {
       </div>
 
       <motion.div
-        className="max-w-4xl mx-auto px-6 lg:px-12 relative z-10 text-center flex flex-col items-center"
+        className="max-w-4xl mx-auto px-4 lg:px-8 relative z-10 text-center flex flex-col items-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
         {/* Kicker */}
-        <span className="text-[#B28544] font-sans text-xs md:text-sm uppercase tracking-[0.2em] font-bold mb-6 block">
+        <span className="text-[#F4ECE1]/80 font-sans text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold mb-6 block">
           Begin Your Journey
         </span>
 
         {/* CTA Heading */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#F4ECE1] mb-6 leading-tight">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#F4ECE1] mb-6 leading-tight">
           Ready to Create Your <br className="hidden sm:block" />
-          <span className="italic text-[#B28544]">Dream Furniture?</span>
+          <span className="italic">Dream Furniture?</span>
         </h2>
 
-        <div className="w-16 h-[1px] bg-[#B28544]/40 mb-8" />
-
-        {/* CTA Description */}
-        <p className="text-[#F4ECE1]/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-sans leading-relaxed font-light">
-          Let’s collaborate to design bespoke furniture that perfectly complements your home.
-          Free consultation available.
-        </p>
-
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <div className="flex pt-4 flex-col sm:flex-row items-center justify-center gap-6">
           <PrimaryButton href="/quote" variant="light">
             Get a Free Quote
           </PrimaryButton>
-          <SecondaryButton href="/gallery" variant="light">
-            Browse Our Work
-          </SecondaryButton>
         </div>
       </motion.div>
     </section>

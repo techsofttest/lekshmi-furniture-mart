@@ -71,13 +71,14 @@ export default function HeroSlider() {
             src={slides[current].image}
             alt={slides[current].title}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
 
           {/* Minimalist Dark Overlay */}
           <div className="absolute inset-0 bg-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#1A120E]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-l from-black/50 to-transparent" />
 
           {/* Content Layer */}
           <div className="absolute inset-0 flex items-center justify-end">

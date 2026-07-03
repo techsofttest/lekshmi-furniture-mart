@@ -81,14 +81,14 @@ export default function HeritageProjects() {
 
     const targetX = direction === "prev" ? currentX + scrollAmount : currentX - scrollAmount;
 
-    animate(x, targetX, { 
+    animate(x, targetX, {
       type: "spring", stiffness: 400, damping: 50,
       onComplete: () => setIsAnimating(false)
     });
   };
 
   return (
-    <section className="py-24 bg-[#FCFAF8] w-full border-t border-[#B28544]/20 relative">
+    <section className="py-24 bg-[#FCFAF8] w-full border-t border-[#592915]/20 relative">
       {/* Traditional Indian Mandala Background Motif */}
       <div className="absolute -top-40 -left-40 z-0 opacity-[0.03] pointer-events-none text-[#592915]">
         <svg width="600" height="600" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
@@ -105,36 +105,36 @@ export default function HeritageProjects() {
         </svg>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 relative z-10">
         <div className="flex flex-col gap-12 items-center">
 
           {/* Top: Content */}
           <div className="w-full flex flex-col items-center text-center z-20 max-w-3xl">
-            <span className="text-[#B28544] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">
+            <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.2em] font-bold mb-4 block">
               Our Prestige
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#592915] mb-6 leading-tight">
+            <h2 className="text-xl md:text-2xl font-serif text-[#592915] mb-6 leading-tight">
               Resort & Heritage Projects
             </h2>
-            <p className="text-[#2A1C14]/70 font-sans text-sm md:text-base mb-2 leading-relaxed">
+            <p className="text-[#2A1C14]/70 font-sans text-sm md:text-normal leading-relaxed mb-2">
               A showcase of our bespoke craftsmanship tailored for the most exclusive heritage properties and premium resorts across Kerala. We bring traditional aesthetics into the modern hospitality space.
             </p>
           </div>
 
           {/* Bottom: Draggable Carousel */}
-          <div 
+          <div
             className="w-full relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             {/* Controls */}
-            <button 
+            <button
               onClick={() => handleNav("prev")}
               className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-6 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/70 backdrop-blur-sm shadow-md flex items-center justify-center text-[#592915] hover:bg-white transition-all"
             >
               <ChevronLeft size={24} />
             </button>
-            <button 
+            <button
               onClick={() => handleNav("next")}
               className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-6 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/70 backdrop-blur-sm shadow-md flex items-center justify-center text-[#592915] hover:bg-white transition-all"
             >
@@ -157,20 +157,21 @@ export default function HeritageProjects() {
                 {items.map((project, idx) => (
                   <div
                     key={idx}
-                    className="relative shrink-0 w-[280px] h-[340px] md:h-[400px] rounded-sm overflow-hidden group shadow-lg pointer-events-none"
+                    className="relative shrink-0 w-[340px] h-[420px] md:w-[400px] md:h-[500px] rounded-sm overflow-hidden group shadow-lg pointer-events-none"
                   >
                     <Image
                       src={project.image}
                       alt={project.name}
                       fill
+                      sizes="(max-width: 768px) 340px, 400px"
                       className="object-cover"
                     />
 
                     {/* Dark gradient overlay for text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A120E]/90 via-[#1A120E]/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
                     <div className="absolute bottom-6 left-6 right-6 flex flex-col items-start pointer-events-none">
-                      <h3 className="text-[#F4ECE1] font-serif text-base tracking-[0.1em] leading-snug uppercase drop-shadow-lg">
+                      <h3 className="text-[#F4ECE1] font-serif text-lg tracking-[0.1em] leading-snug uppercase drop-shadow-lg">
                         {project.name}
                       </h3>
                     </div>

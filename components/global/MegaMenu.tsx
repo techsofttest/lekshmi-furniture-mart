@@ -55,6 +55,7 @@ export default function MegaMenu({ groups, highlight, isOpen }: MegaMenuProps) {
                                 src={highlight.image}
                                 alt={highlight.title}
                                 fill
+                                sizes="180px"
                                 className="object-cover"
                             />
                         </div>

@@ -32,11 +32,11 @@ export default function AboutSection() {
     <section className="py-24 bg-[#FCFAF8] w-full relative">
 
       {/* items-start is crucial here so the sticky child can track the height of the grid */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24 grid grid-cols-1 xl:grid-cols-2 gap-16 relative z-10 items-start">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 grid grid-cols-1 xl:grid-cols-2 gap-16 relative z-10 items-start">
 
         {/* Left Column: Sticky Before & After Slider */}
         <motion.div
-          className="sticky top-28 w-full h-[70vh] min-h-[500px] rounded-sm overflow-hidden group"
+          className="sticky top-28 w-full h-[65vh] min-h-[550px] rounded-sm overflow-hidden group"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -50,6 +50,7 @@ export default function AboutSection() {
               src="/room-change/before.jpg"
               alt="Space before customisation"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -69,10 +70,11 @@ export default function AboutSection() {
               src="/room-change/after.png"
               alt="Space after customisation"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
               priority
             />
-            <div className="absolute top-6 right-6 px-4 py-1.5 bg-[#B28544]/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-widest font-bold rounded-sm">
+            <div className="absolute top-6 right-6 px-4 py-1.5 bg-[#592915]/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-widest font-bold rounded-sm">
               After
             </div>
           </div>
@@ -109,11 +111,11 @@ export default function AboutSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-bold mb-4 block">The Lekshmi Experience</span>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#592915] mb-4 leading-tight inline-block relative">
+            <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.2em] font-bold mb-4 block">The Lekshmi Experience</span>
+            <h2 className="text-xl md:text-2xl font-serif text-[#592915] mb-4 leading-tight inline-block relative">
               Bespoke Craftsmanship, Tailored for You
             </h2>
-            <p className="text-[#2A1C14]/70 font-sans text-lg mb-8 leading-relaxed max-w-2xl mt-6">
+            <p className="text-[#2A1C14]/70 font-sans text-sm md:text-normal leading-relaxed mb-8 max-w-2xl mt-6">
               We are dedicated to crafting heirloom-quality furniture that transforms your living spaces. Our commitment to excellence ensures every piece is built to your exact specifications using premium materials, seamless service, and uncompromising attention to detail. Experience the art of truly bespoke design.
             </p>
             <SecondaryButton href="/customization" variant="dark">
@@ -122,7 +124,7 @@ export default function AboutSection() {
           </motion.div>
 
           {/* Shadowless, 3-Column Grid with Lucide Icons */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-[#B28544]/20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-[#592915]/20">
             {keyValues.map((value, index) => {
               const Icon = value.icon;
               return (
@@ -138,8 +140,8 @@ export default function AboutSection() {
                     <Icon size={22} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="text-base font-bold text-[#592915] mb-2 font-sans">{value.title}</h4>
-                    <p className="text-sm text-[#2A1C14]/70 font-sans leading-relaxed">{value.description}</p>
+                    <h4 className="text-lg font-serif text-[#592915] mb-2">{value.title}</h4>
+                    <p className="text-[#2A1C14]/70 font-sans text-sm md:text-normal leading-relaxed">{value.description}</p>
                   </div>
                 </motion.div>
               );

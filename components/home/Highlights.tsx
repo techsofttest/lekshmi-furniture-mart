@@ -23,7 +23,7 @@ const highlightsData = [
 
 export default function Highlights() {
   return (
-    <section className="py-12 md:py-16 bg-[#1A120E] w-full relative overflow-hidden border-b border-[#B28544]/20">
+    <section className="py-12 md:py-16 bg-[#1A120E] w-full relative overflow-hidden border-b border-white/10">
 
       {/* Premium Wood Ring Background Pattern (Low Opacity) */}
       <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none">
@@ -81,7 +81,7 @@ export default function Highlights() {
         </svg>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 xl:gap-16 text-center">
 
           {highlightsData.map((item, idx) => {
@@ -96,13 +96,13 @@ export default function Highlights() {
                 transition={{ duration: 0.8, delay: idx * 0.15 }}
               >
                 {/* Simple Outline Icon */}
-                <div className="w-12 h-12 mb-4 flex items-center justify-center text-[#B28544] group-hover:scale-105 transition-transform duration-500">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center text-[#F4ECE1]/80 group-hover:text-white group-hover:scale-105 transition-all duration-500">
                   <Icon size={32} strokeWidth={1.2} />
                 </div>
-                <h3 className="text-lg md:text-xl font-serif text-[#B28544] tracking-[0.15em] mb-2 uppercase">
+                <h3 className="text-lg font-serif text-[#F4ECE1] tracking-[0.15em] mb-2 uppercase">
                   {item.title}
                 </h3>
-                <p className="text-[#F4ECE1]/70 font-sans text-sm md:text-base leading-relaxed max-w-xs">
+                <p className="text-[#F4ECE1]/70 font-sans text-sm md:text-normal leading-relaxed max-w-xs">
                   {item.description}
                 </p>
               </motion.div>
