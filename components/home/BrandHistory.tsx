@@ -31,7 +31,7 @@ export default function BrandHistory() {
 
 
 
-      <div className="max-w-4xl mx-auto px-4 lg:px-8 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 lg:px-24 relative z-10">
         <motion.div
           className="flex flex-col justify-center items-center text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -51,7 +51,7 @@ export default function BrandHistory() {
 
           <div className="w-16 h-[1px] bg-white/20 mb-10" />
 
-          <div className="space-y-6 text-[#F4ECE1]/90 font-sans text-sm md:text-xl leading-relaxed">
+          <div className="space-y-6 text-[#F4ECE1]/90 font-sans text-sm md:text-base lg:text-lg leading-relaxed">
             <p>
               Our roots were established in 1990 with <span className="font-semibold text-white tracking-wide">"Vishnu Furniture Mart"</span>, started by two brothers. Under this legacy, we successfully executed major resort projects including Marari Beach and Coconut Lagoon.
 

@@ -139,7 +139,7 @@ export default function ProductList() {
               whileTap={{ cursor: "grabbing" }}
             >
               {items.map((product, idx) => (
-                <div key={idx} className="w-[400px] sm:w-[450px] shrink-0">
+                <div key={idx} className="w-[280px] sm:w-[350px] md:w-[400px] shrink-0">
                   <Card title={product.title} image={product.image} href={product.href} />
                 </div>
               ))}

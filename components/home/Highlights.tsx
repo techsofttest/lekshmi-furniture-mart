@@ -102,7 +102,7 @@ export default function Highlights() {
                 <h3 className="text-lg font-serif text-[#F4ECE1] tracking-[0.15em] mb-2 uppercase">
                   {item.title}
                 </h3>
-                <p className="text-[#F4ECE1]/70 font-sans text-sm md:text-normal leading-relaxed max-w-xs">
+                <p className="text-[#F4ECE1]/80 font-sans text-sm md:text-base leading-relaxed max-w-xs">
                   {item.description}
                 </p>
               </motion.div>

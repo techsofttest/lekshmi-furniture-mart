@@ -36,7 +36,7 @@ const timelineSteps = [
 
 export default function Timeline({ containerVariants, itemVariants }: TimelineProps) {
   return (
-    <section className="py-20 bg-[#FCFAF8] border-y border-[#B28544]/10 -mx-6 lg:-mx-12 xl:-mx-24 px-6 lg:px-12 xl:px-24 mb-32">
+    <section className="py-20 bg-[#FCFAF8] border-y border-[#B28544]/10 -mx-6 lg:-mx-12 xl:-mx-24 px-6 lg:px-12 xl:px-24">
       <div className="max-w-[1600px] mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.2em] font-bold block">

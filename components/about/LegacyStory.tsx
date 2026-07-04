@@ -45,13 +45,13 @@ export default function LegacyStory({ containerVariants, itemVariants }: LegacyS
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-6 max-w-3xl mx-auto">
-            <p className="text-[#F4ECE1]/70 font-sans text-base md:text-lg leading-relaxed">
+            <p className="text-[#F4ECE1]/90 font-sans text-base md:text-lg leading-relaxed">
               Our journey began in 1990 under the name <strong className="text-white font-semibold">Vishnu Furniture Mart</strong>, started by two brothers with an enduring passion for premium carpentry. We quickly earned a reputation for reliability, executing high-profile resort projects like the Marari Beach Resort and Coconut Lagoon.
             </p>
-            <p className="text-[#F4ECE1]/70 font-sans text-base md:text-lg leading-relaxed">
+            <p className="text-[#F4ECE1]/90 font-sans text-base md:text-lg leading-relaxed">
               In 2010, <strong className="text-white font-semibold">Lekshmi Furniture Mart</strong> was founded as our dedicated boutique branch to specialize in high-end, customized furniture for residential and corporate clients.
             </p>
-            <p className="text-[#F4ECE1]/70 font-sans text-base md:text-lg leading-relaxed">
+            <p className="text-[#F4ECE1]/90 font-sans text-base md:text-lg leading-relaxed">
               Every piece that leaves our workshop carries over three decades of collaborative expertise, blending time-honored joinery methods with modern elegance.
             </p>
           </motion.div>

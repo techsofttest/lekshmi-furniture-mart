@@ -75,7 +75,7 @@ export default function Testimonials() {
           {/* Left Control */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
+            className="hidden sm:flex absolute left-0 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#592915]/40 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
             aria-label="Previous Testimonial"
           >
             <ChevronLeft size={48} strokeWidth={1} />
@@ -84,7 +84,7 @@ export default function Testimonials() {
           {/* Right Control */}
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#592915]/30 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
+            className="hidden sm:flex absolute right-0 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#592915]/40 hover:text-[#592915] transition-colors duration-300 z-20 p-2"
             aria-label="Next Testimonial"
           >
             <ChevronRight size={48} strokeWidth={1} />
@@ -92,7 +92,7 @@ export default function Testimonials() {
 
           {/* Testimonial Card */}
           <motion.div
-            className="bg-[#FCFAF8] border border-[#FCF8F3] px-10 md:px-16 py-8 md:py-12 rounded-sm min-h-[380px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col justify-center overflow-hidden"
+            className="bg-[#FCFAF8] border border-[#FCF8F3] px-6 sm:px-10 md:px-16 py-8 md:py-12 rounded-sm min-h-[380px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[380px] flex flex-col justify-center overflow-hidden"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -119,7 +119,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Text */}
-                <p className="text-[#2A1C14]/70 font-sans text-xl md:text-normal leading-relaxed italic mb-12 text-center">
+                <p className="text-[#2A1C14]/75 font-sans text-base md:text-lg leading-relaxed italic mb-12 text-center">
                   "{testimonials[currentIndex].text}"
                 </p>
 

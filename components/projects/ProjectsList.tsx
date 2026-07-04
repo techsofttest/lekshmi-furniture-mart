@@ -49,7 +49,7 @@ const projects: Project[] = [
 
 export default function ProjectsList() {
   return (
-    <div className="space-y-24 mb-32">
+    <div className="space-y-24 mb-32 mt-32">
       {projects.map((project, index) => (
         <motion.div
           key={project.id}

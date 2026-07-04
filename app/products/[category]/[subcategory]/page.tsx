@@ -50,7 +50,7 @@ export default async function SubcategoryPage({ params }: PageProps) {
   const siblingItems = parentSub?.items || [];
 
   return (
-    <div className="flex flex-col w-full min-h-screen bg-white">
+    <div className="flex flex-col w-full bg-white">
 
       {/* Breadcrumb */}
       <div className="border-b border-gray-100 py-4 mt-2">
@@ -68,7 +68,7 @@ export default async function SubcategoryPage({ params }: PageProps) {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14">
 
           {/* Sidebar — Sibling Category Navigation */}
-          <aside className="lg:w-56 xl:w-64 shrink-0 lg:sticky lg:top-28 self-start lg:border-r lg:border-gray-200 lg:pr-8">
+          <aside className="w-full lg:w-56 xl:w-64 shrink-0 lg:sticky lg:top-28 self-start lg:border-r lg:border-gray-200 lg:pr-8">
             <h3 className="text-[10px] uppercase tracking-[0.2em] text-[#592915] font-bold mb-4 font-sans">
               {parentSubcategoryName || parentSub?.name || category.name}
             </h3>
@@ -100,7 +100,7 @@ export default async function SubcategoryPage({ params }: PageProps) {
           </aside>
 
           {/* Main Content */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 overflow-x-auto lg:overflow-x-visible">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
               <div>

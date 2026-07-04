@@ -15,28 +15,32 @@ const footerLinks = [
         ],
     },
     {
-        title: "OUR CATEGORIES",
+        title: "OUR CATALOG",
         items: [
-            { name: "Home", href: "/" },
-            { name: "Living", href: "/category/living" },
-            { name: "Bedroom", href: "/category/bedroom" },
-            { name: "Dining & Kitchen", href: "/category/dining" },
-            { name: "Office", href: "/category/office" },
+            { name: "Living", href: "/products/living/coffee-tables" },
+            { name: "Bedroom", href: "/products/bedroom/king-size-beds" },
+            { name: "Dining", href: "/products/dining/4-seater-dining-sets" },
+            { name: "Study", href: "/products/study/study-tables" },
+            { name: "Storage Furniture", href: "/products/storage-furniture/2-door-wardrobes" },
+            { name: "Pillars", href: "/products/pillars/teak-wood-pillars" },
+            { name: "Furnishing", href: "/products/furnishing/bedsheets" },
+            { name: "Office Room", href: "/products/office-room/executive-desks-office" },
         ],
     },
     {
-        title: "SERVICES",
+        title: "QUICK LINKS",
         items: [
             { name: "Custom Designs", href: "/custom-designs" },
             { name: "Shop Locator", href: "/locator" },
             { name: "Payment Options", href: "/payment-options" },
             { name: "Delivery Options", href: "/delivery-options" },
+            { name: "Contact Us", href: "/contact" },
         ],
     },
     {
         title: "HELP & SUPPORT",
         items: [
-            { name: "Care Instructions", href: "/help#care" },
+            { name: "Care Instructions", href: "/care-instructions" },
             // { name: "Terms Of Use", href: "/help#terms" },
             // { name: "Privacy Policy", href: "/help#privacy" },
             { name: "Sitemap", href: "/sitemap" },
@@ -59,10 +63,10 @@ export default function Footer() {
         <footer className="w-full flex flex-col pt-12 text-[#2A1C14] bg-[#FCFAF8]">
 
             {/* Top Area: Multi-column links & locator */}
-            <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 py-16 px-4 lg:px-8 xl:px-16 z-10 relative">
+            <div className="max-w-[1600px] mx-auto w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12 md:gap-8 py-16 px-4 lg:px-8 xl:px-16 z-10 relative">
 
                 {/* Logo, Find Us & Locator column */}
-                <div className="flex flex-col gap-10 md:col-span-1">
+                <div className="col-span-2 md:col-span-1 flex flex-col gap-10">
 
                     {/* Logo added here */}
                     <Link href="/" className="mb-2 block">
@@ -110,7 +114,7 @@ export default function Footer() {
 
                 {/* Adaptive Columns 2-5 */}
                 {footerLinks.slice(1).map((column, idx) => (
-                    <div key={idx} className="flex flex-col gap-4">
+                    <div key={idx} className="col-span-1 flex flex-col gap-4">
                         <h4 className="text-[#592915] font-sans text-xs uppercase tracking-[0.2em] font-semibold mb-4 block">
                             {column.title}
                         </h4>
@@ -123,7 +127,7 @@ export default function Footer() {
                                         <li key={subIdx} className="flex gap-4 items-start font-medium">
                                             {typeof Icon === 'function' && <Icon size={18} strokeWidth={1} className="text-[#592915] w-4 h-4 mt-0.5" />}
 
-                                            <Link href={item.href || "#"} className="text-sm hover:text-black transition-colors">
+                                            <Link href={item.href || "#"} className="text-sm hover:text-black transition-colors break-all">
                                                 {item.text}
                                             </Link>
                                         </li>

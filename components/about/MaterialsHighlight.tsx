@@ -63,7 +63,7 @@ export default function MaterialsHighlight() {
             transition={{ duration: 0.8 }}
             className="absolute top-8 left-8 lg:top-12 lg:left-12"
           >
-            <span className="text-white/60 font-sans text-[10px] uppercase tracking-[0.25em] font-bold block mb-2">
+            <span className="text-white/80 font-sans text-[10px] uppercase tracking-[0.25em] font-bold block mb-2">
               Premium Material Selection
             </span>
             <h2 className="text-xl md:text-2xl font-serif text-white leading-tight">
@@ -74,7 +74,7 @@ export default function MaterialsHighlight() {
 
           {/* Bottom caption */}
           <div className="absolute bottom-8 left-8">
-            <span className="text-white/60 font-sans text-[10px] uppercase tracking-[0.3em] font-bold block mb-1">
+            <span className="text-white/80 font-sans text-[10px] uppercase tracking-[0.3em] font-bold block mb-1">
               Master Workshop
             </span>
             <span className="text-white font-serif text-base italic">
@@ -94,7 +94,7 @@ export default function MaterialsHighlight() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: idx * 0.15 }}
-              className="group px-10 lg:px-16 py-10 border-b border-[#592915]/10 flex gap-8 items-start hover:bg-white transition-colors duration-500"
+              className="group px-6 md:px-10 lg:px-16 py-10 border-b border-[#592915]/10 flex gap-8 items-start hover:bg-white transition-colors duration-500"
             >
               {/* Large ordinal number */}
               <span className="text-[#592915]/15 font-serif text-5xl font-light select-none leading-none mt-1 shrink-0 group-hover:text-[#592915]/25 transition-colors duration-500">
@@ -139,7 +139,7 @@ export default function MaterialsHighlight() {
             <span className="text-white font-serif text-3xl md:text-4xl font-light block mb-1">
               {stat.value}
             </span>
-            <span className="text-white/50 font-sans text-[10px] uppercase tracking-[0.2em] font-bold">
+            <span className="text-white/80 font-sans text-[10px] uppercase tracking-[0.2em] font-bold">
               {stat.label}
             </span>
           </div>

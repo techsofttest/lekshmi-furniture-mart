@@ -157,7 +157,7 @@ export default function HeritageProjects() {
                 {items.map((project, idx) => (
                   <div
                     key={idx}
-                    className="relative shrink-0 w-[340px] h-[420px] md:w-[400px] md:h-[500px] rounded-sm overflow-hidden group shadow-lg pointer-events-none"
+                    className="relative shrink-0 w-[280px] sm:w-[340px] md:w-[400px] h-[380px] sm:h-[420px] md:h-[500px] rounded-sm overflow-hidden group shadow-lg pointer-events-none"
                   >
                     <Image
                       src={project.image}

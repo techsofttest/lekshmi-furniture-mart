@@ -31,7 +31,7 @@ export default function ClientsPage() {
         subtitle="& Heritage Restorations"
       />
 
-      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 py-16 md:py-24">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16">
         {/* Project Showcases */}
         <ProjectsList />
 

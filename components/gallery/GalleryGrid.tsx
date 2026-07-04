@@ -102,6 +102,8 @@ export default function GalleryGrid() {
     }
   }, []);
 
+  const [selectedImage, setSelectedImage] = useState<{ src: string; title: string; wood: string; description: string } | null>(null);
+
   const categories = [
     { value: "all" as const, label: "All Masterpieces" },
     { value: "living" as const, label: "Living" },
@@ -116,13 +118,12 @@ export default function GalleryGrid() {
 
   return (
     <div className="max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-24 py-16 md:py-24">
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 mb-16">
+      <div className="flex flex-nowrap md:flex-wrap items-center justify-start md:justify-center gap-3 md:gap-6 mb-16 overflow-x-auto md:overflow-x-visible pb-4 md:pb-0 scrollbar-none -mx-6 px-6 md:mx-0 md:px-0">
         {categories.map((cat) => (
           <button
             key={cat.value}
             onClick={() => setFilter(cat.value)}
-            className={`px-6 py-2.5 rounded-none text-[10px] uppercase tracking-[0.2em] transition-all duration-300 font-bold border ${filter === cat.value
+            className={`px-6 py-2.5 rounded-none text-[10px] uppercase tracking-[0.2em] transition-all duration-300 font-bold border shrink-0 ${filter === cat.value
               ? "bg-[#592915] text-[#FCFAF8] border-[#592915]"
               : "bg-transparent text-[#2A1C14]/60 border-gray-200 hover:border-[#592915] hover:text-[#592915]"
               }`}
@@ -146,9 +147,10 @@ export default function GalleryGrid() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.5 }}
-              className="group relative flex flex-col bg-[#FCFAF8] border border-gray-100 rounded-sm overflow-hidden"
+              onClick={() => setSelectedImage({ src: item.src, title: item.title, wood: item.wood, description: item.description })}
+              className="group relative flex flex-col bg-[#FCFAF8] border border-gray-100 rounded-sm overflow-hidden cursor-pointer"
             >
-              {/* Image Container with Double Accent Frame on Hover */}
+              {/* Image Container */}
               <div className="relative aspect-square overflow-hidden bg-gray-100">
                 <Image
                   src={item.src}
@@ -157,22 +159,10 @@ export default function GalleryGrid() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-[1500ms] group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#FCFAF8]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6 z-10 border border-[#B28544]/20 m-3">
-                  <span className="text-[#592915] font-serif text-xs italic mb-1">
-                    {item.wood}
-                  </span>
-                  <h3 className="text-[#592915] font-serif text-lg font-bold mb-2">
-                    {item.title}
-                  </h3>
-                  <div className="w-8 h-[1px] bg-[#B28544]/40 my-2" />
-                  <p className="text-[#2A1C14]/70 font-sans text-sm md:text-normal leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
               </div>
 
               {/* Metadata Below Image (always visible on mobile/desktop without hover) */}
-              <div className="p-6 flex flex-col justify-between border-t border-gray-100">
+              <div className="p-6 flex flex-col justify-between border-t border-gray-100 flex-1 bg-white">
                 <div>
                   <span className="text-[#592915] font-sans text-[10px] uppercase tracking-widest font-bold block mb-1">
                     {item.category} • {item.wood}
@@ -180,12 +170,67 @@ export default function GalleryGrid() {
                   <h4 className="font-serif text-lg text-[#592915] group-hover:text-[#B28544] transition-colors duration-300">
                     {item.title}
                   </h4>
+                  <p className="text-[#2A1C14]/70 font-sans text-sm leading-relaxed mt-2 line-clamp-2">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </motion.div>
           ))}
         </AnimatePresence>
       </motion.div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-[100] bg-black/90 flex flex-col items-center justify-center p-4 sm:p-6 md:p-10"
+          >
+            <div
+              className="relative max-w-4xl w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex flex-col justify-center items-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-12 right-0 text-white hover:text-[#B28544] transition-colors p-2 text-xs uppercase tracking-widest font-bold font-sans flex items-center gap-1"
+                aria-label="Close Lightbox"
+              >
+                ✕ Close
+              </button>
+
+              {/* Lightbox Image */}
+              <div className="relative w-full h-full bg-black/40 rounded-sm overflow-hidden">
+                <Image
+                  src={selectedImage.src}
+                  alt={selectedImage.title}
+                  fill
+                  sizes="100vw"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+
+              {/* Lightbox Metadata */}
+              <div className="text-center mt-6 text-[#FCFAF8] max-w-xl px-4 cursor-default">
+                <span className="text-[#B28544] font-sans text-[10px] uppercase tracking-widest font-bold block mb-1">
+                  {selectedImage.wood}
+                </span>
+                <h3 className="font-serif text-xl sm:text-2xl text-white mb-2">
+                  {selectedImage.title}
+                </h3>
+                <p className="text-white/70 font-sans text-xs sm:text-sm leading-relaxed">
+                  {selectedImage.description}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative h-[70vh] w-full overflow-hidden bg-[#1A120E]">
+    <section className="relative h-[70vh] min-h-[400px] w-full overflow-hidden bg-[#1A120E]">
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[current].id}
@@ -106,7 +106,7 @@ export default function HeroSlider() {
 
       {/* Minimal Slider Indicators */}
       <div className="absolute bottom-10 left-6 lg:left-12 xl:left-24 flex items-center gap-8 z-20">
-        <span className="text-[#F4ECE1]/60 text-xs font-light font-sans tracking-[0.2em]">0{current + 1}</span>
+        <span className="text-[#F4ECE1]/80 text-xs font-light font-sans tracking-[0.2em]">0{current + 1}</span>
         <div className="flex gap-4">
           {slides.map((_, idx) => (
             <button
@@ -118,7 +118,7 @@ export default function HeroSlider() {
             />
           ))}
         </div>
-        <span className="text-[#F4ECE1]/60 text-xs font-light font-sans tracking-[0.2em]">04</span>
+        <span className="text-[#F4ECE1]/80 text-xs font-light font-sans tracking-[0.2em]">04</span>
       </div>
     </section>
   );

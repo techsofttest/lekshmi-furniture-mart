@@ -5,7 +5,7 @@ import CTA from "@/components/home/CTA";
 
 export default function PaymentOptionsPage() {
     return (
-        <div className="bg-white text-[#2A1C14] min-h-screen">
+        <div className="bg-white text-[#2A1C14]">
             <InnerPageHero
                 kicker="Flexible & Secure"
                 title="Payment Options"
@@ -28,12 +28,12 @@ export default function PaymentOptionsPage() {
                         <div className="bg-[#FCFAF8] p-8 border border-gray-100 rounded-sm">
                             <h3 className="text-4xl font-serif text-[#592915] mb-2">50%</h3>
                             <p className="text-sm uppercase tracking-widest font-sans font-semibold text-[#592915]/80">Advance Payment</p>
-                            <p className="text-xs text-[#2A1C14]/60 mt-3">To confirm your order and begin material sourcing.</p>
+                            <p className="text-xs text-[#2A1C14]/70 mt-3">To confirm your order and begin material sourcing.</p>
                         </div>
                         <div className="bg-[#FCFAF8] p-8 border border-gray-100 rounded-sm">
                             <h3 className="text-4xl font-serif text-[#592915] mb-2">50%</h3>
                             <p className="text-sm uppercase tracking-widest font-sans font-semibold text-[#592915]/80">Upon Delivery</p>
-                            <p className="text-xs text-[#2A1C14]/60 mt-3">Remaining balance to be paid upon final delivery or installation.</p>
+                            <p className="text-xs text-[#2A1C14]/70 mt-3">Remaining balance to be paid upon final delivery or installation.</p>
                         </div>
                     </div>
 

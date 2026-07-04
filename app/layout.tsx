@@ -33,12 +33,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${lato.variable} h-full antialiased scroll-smooth`}
+      className={`${playfair.variable} ${lato.variable} h-full antialiased scroll-smooth overflow-x-hidden`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground selection:bg-brand-gold selection:text-brand-dark">
         <Header />
         {/* main wrapper ensures the footer (when added) gets pushed to the bottom if content is short */}
-        <main className="flex-1 flex flex-col w-full relative">
+        <main className="flex-1 flex flex-col w-full relative pt-20 xl:pt-[92px]">
           {children}
           <Footer />
         </main>
