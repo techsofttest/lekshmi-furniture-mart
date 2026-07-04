@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import InnerPageHero from "@/components/global/InnerPageHero";
 import CTA from "@/components/home/CTA";
 import Link from "next/link";
+import Image from "next/image";
 import {
     MapPin,
     Phone,
@@ -189,8 +190,20 @@ export default function ContactPage() {
             </section>
 
             {/* ── Contact Form ── */}
-            <section className="py-20 bg-[#FCFAF8]">
-                <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16">
+            <section className="py-20 relative overflow-hidden bg-[#1A120E]">
+                {/* Background Image Layer */}
+                <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
+                    <Image
+                        src="/banner/banner-7b.png"
+                        alt="Contact form background wood texture"
+                        fill
+                        sizes="100vw"
+                        className="object-cover grayscale"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/60" />
+                </div>
+
+                <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 relative z-10">
                     <motion.div
                         className="text-center mb-14"
                         initial="hidden"
@@ -199,17 +212,17 @@ export default function ContactPage() {
                         custom={0}
                         variants={fadeUp}
                     >
-                        <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.25em] font-bold block mb-3">
+                        <span className="text-[#F4ECE1]/80 font-sans text-[10px] uppercase tracking-[0.25em] font-bold block mb-3">
                             Drop Us a Message
                         </span>
-                        <h2 className="text-2xl md:text-3xl font-serif text-[#592915]">
+                        <h2 className="text-2xl md:text-3xl font-serif text-[#F4ECE1]">
                             Send an Enquiry
                         </h2>
-                        <div className="w-14 h-[1.5px] bg-[#592915]/30 mx-auto mt-5" />
-                        <p className="text-sm text-[#2A1C14]/60 font-sans mt-5 max-w-xl mx-auto leading-relaxed">
+                        <div className="w-14 h-[1.5px] bg-[#F4ECE1]/30 mx-auto mt-5" />
+                        {/* <p className="text-sm text-[#F4ECE1]/70 font-sans mt-5 max-w-xl mx-auto leading-relaxed">
                             Fill in the form below and our team will get back to you within
-                            one business day.
-                        </p>
+                            one business day. */}
+                        {/* </p> */}
                     </motion.div>
 
                     <motion.div
@@ -268,7 +281,7 @@ export default function ContactPage() {
                                             value={formData.name}
                                             onChange={handleChange}
                                             placeholder="Your name"
-                                            className="border border-gray-200 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/30"
+                                            className="border border-gray-300 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/50"
                                         />
                                     </div>
                                     <div className="flex flex-col gap-2">
@@ -286,7 +299,7 @@ export default function ContactPage() {
                                             value={formData.email}
                                             onChange={handleChange}
                                             placeholder="your@email.com"
-                                            className="border border-gray-200 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/30"
+                                            className="border border-gray-300 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/50"
                                         />
                                     </div>
                                 </div>
@@ -307,7 +320,7 @@ export default function ContactPage() {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             placeholder="+91 00000 00000"
-                                            className="border border-gray-200 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/30"
+                                            className="border border-gray-300 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/50"
                                         />
                                     </div>
                                     <div className="flex flex-col gap-2">
@@ -323,7 +336,7 @@ export default function ContactPage() {
                                             required
                                             value={formData.subject}
                                             onChange={handleChange}
-                                            className="border border-gray-200 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors appearance-none"
+                                            className="border border-gray-300 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors appearance-none"
                                         >
                                             <option value="" disabled>
                                                 Select a subject…
@@ -353,7 +366,7 @@ export default function ContactPage() {
                                         value={formData.message}
                                         onChange={handleChange}
                                         placeholder="Tell us how we can help…"
-                                        className="border border-gray-200 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/30 resize-none"
+                                        className="border border-gray-300 rounded-sm px-4 py-3 text-sm font-sans text-[#2A1C14] bg-[#FCFAF8] focus:outline-none focus:border-[#592915] transition-colors placeholder:text-[#2A1C14]/50 resize-none"
                                     />
                                 </div>
 
