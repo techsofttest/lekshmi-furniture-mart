@@ -5,44 +5,39 @@ import Card from "@/components/global/Card";
 import { motion, useMotionValue, animate, useAnimationFrame } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-/**
- * Replace these placeholder images with actual high-res photos 
- * in your /public/products folder.
- */
 const topSellers = [
   {
     title: "King Size Bed",
     image: "/products/bed-room/bed.jpg",
-    href: "/product/king-size-bed"
+    href: "/products/bedroom/king-size-beds/royal-teak-king-bed"
   },
   {
     title: "Long Wooden Chair",
     image: "/products/chair/long wooden chair.jpeg",
-    href: "/product/long-wooden-chair"
+    href: "/products/dining/dining-chairs-and-benches/royal-heritage-dining-bench"
   },
   {
     title: "Artisan Dining Set",
     image: "/products/dining/dining-table.jpg",
-    href: "/product/artisan-dining"
+    href: "/products/dining/dining-tables/single-slab-teak-dining-table"
   },
   {
     title: "Corner Stand",
-    image: "/products/living/corner-stand1.jpeg",
-    href: "/product/corner-stand"
+    image: "/products/living/corner-stand.jpg",
+    href: "/products/living/shoe-racks/premium-wooden-corner-stand"
   },
 ];
 
-// Duplicate for seamless loop
-const items = [...topSellers, ...topSellers];
+// Triple for seamless continuous loop on all screens
+const items = [...topSellers, ...topSellers, ...topSellers];
 
 export default function ProductList() {
   const x = useMotionValue(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const [carouselWidth, setCarouselWidth] = useState(0);
+  const [oneSetWidth, setOneSetWidth] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
-  const [halfWidth, setHalfWidth] = useState(0);
 
   const [isHovered, setIsHovered] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
@@ -52,39 +47,51 @@ export default function ProductList() {
     const calculateWidths = () => {
       if (carouselRef.current && containerRef.current) {
         const fullWidth = carouselRef.current.scrollWidth;
-        setCarouselWidth(fullWidth);
-        setContainerWidth(containerRef.current.offsetWidth);
-        setHalfWidth((fullWidth + 16) / 2); // 16px is gap-4
+        const cWidth = containerRef.current.offsetWidth;
+        setContainerWidth(cWidth);
+        // Since we tripled the items, one set is exactly 1/3 of the scrollWidth
+        setOneSetWidth(fullWidth / 3);
       }
     };
 
     calculateWidths();
     window.addEventListener("resize", calculateWidths);
-    return () => window.removeEventListener("resize", calculateWidths);
+    // Recalculate after a brief delay to ensure images are loaded
+    const timer = setTimeout(calculateWidths, 1000);
+    return () => {
+      window.removeEventListener("resize", calculateWidths);
+      clearTimeout(timer);
+    };
   }, []);
 
   useAnimationFrame((t, delta) => {
-    if (isHovered || isDragging || isAnimating || x.isAnimating() || !halfWidth) return;
+    if (isHovered || isDragging || isAnimating || x.isAnimating() || !oneSetWidth) return;
     let currentX = x.get();
+    // Scroll continuously to the left
     currentX -= Math.min(delta, 50) * 0.05;
-    if (currentX <= -halfWidth) currentX += halfWidth;
+    // Wrap around smoothly when one full set has scrolled past
+    if (currentX <= -oneSetWidth) {
+      currentX += oneSetWidth;
+    }
     x.set(currentX);
   });
 
   const handleNav = (direction: "prev" | "next") => {
-    if (!halfWidth) return;
+    if (!oneSetWidth) return;
     setIsAnimating(true);
     const scrollAmount = containerWidth * 0.7;
     const currentX = x.get();
     const targetX = direction === "prev" ? currentX + scrollAmount : currentX - scrollAmount;
+
     animate(x, targetX, {
       type: "spring",
-      stiffness: 400,
-      damping: 50,
+      stiffness: 300,
+      damping: 35,
       onUpdate: (latest) => {
-        if (halfWidth) {
-          if (latest > 0) x.set(latest - halfWidth);
-          else if (latest < -halfWidth) x.set(latest + halfWidth);
+        if (oneSetWidth) {
+          // Keep it wrapped within the single set boundary
+          if (latest > 0) x.set(latest - oneSetWidth);
+          else if (latest < -oneSetWidth) x.set(latest + oneSetWidth);
         }
       },
       onComplete: () => setIsAnimating(false)
@@ -140,14 +147,14 @@ export default function ProductList() {
               className="flex gap-4 w-max"
               style={{ x }}
               drag="x"
-              // Remove dragConstraints for continuous effect, wrapping is handled by onUpdate
-              dragElastic={0.1}
+              dragConstraints={{ left: -oneSetWidth, right: 0 }}
+              dragElastic={0.05}
               onDragStart={() => setIsDragging(true)}
               onUpdate={() => {
                 const currentX = x.get();
-                if (halfWidth) {
-                  if (currentX > 0) x.set(currentX - halfWidth);
-                  else if (currentX < -halfWidth) x.set(currentX + halfWidth);
+                if (oneSetWidth) {
+                  if (currentX > 0) x.set(currentX - oneSetWidth);
+                  else if (currentX < -oneSetWidth) x.set(currentX + oneSetWidth);
                 }
               }}
               onDragEnd={() => setIsDragging(false)}

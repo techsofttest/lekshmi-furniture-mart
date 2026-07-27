@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import {
@@ -21,7 +22,7 @@ import {
     X,
     ChevronDown,
     ChevronRight,
-} from "lucide-react";
+} from "lucide-react"; // `usePathname` is from `next/navigation`, not `lucide-react`.
 import { productsData } from "@/lib/productsData";
 
 // 1. Navigation Data Structure
@@ -225,7 +226,7 @@ export default function Header() {
     const lastScrollY = useRef(0);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
-
+    const pathname = usePathname();
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
@@ -332,10 +333,17 @@ export default function Header() {
                             {/* Navigation */}
                             <nav className="flex justify-end items-center gap-3 2xl:gap-5 text-[13px] font-bold text-[#2A1C14] tracking-wide">
                                 {navigationData.map((item) => (
-                                    <div key={item.label} className="group pb-4 -mb-4">
-                                        <Link href={item.href} className="hover:text-[#592915] transition-colors py-2 whitespace-nowrap flex items-center gap-1.5">
+                                    <div key={item.label} className="group pb-4 -mb-4"> {/* This parent group is for the mega menu dropdown hover */}
+                                        <Link
+                                            href={item.href}
+                                            className={`relative hover:text-[#592915] transition-colors py-2 whitespace-nowrap flex items-center gap-1.5 group/link ${ // Added group/link for the link's own hover effects
+                                                pathname.startsWith(item.href) ? "text-[#592915]" : ""
+                                                }`}
+                                        >
                                             {item.icon && <item.icon className="w-[14px] h-[14px]" />}
                                             {item.label}
+                                            <span className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#592915] transition-transform duration-300 ${pathname.startsWith(item.href) ? "scale-x-100" : "scale-x-0 group-hover/link:scale-x-50"
+                                                }`} />
                                         </Link>
 
                                         {/* Mega Menu Dropdown */}

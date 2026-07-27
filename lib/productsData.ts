@@ -43,8 +43,7 @@ export const categoriesData: Category[] = [
       { name: "TV Consoles", slug: "tv-consoles" },
       { name: "Bookshelves", slug: "bookshelves" },
       { name: "Display Units", slug: "display-units" },
-      { name: "Shoe Racks", slug: "shoe-racks" },
-      { name: "Long Bench", slug: "long-bench" }
+      { name: "Shoe Racks", slug: "shoe-racks" }
     ]
   },
   {
@@ -195,6 +194,118 @@ export const productsData: Product[] = [
     categorySlug: "bedroom",
     subcategorySlug: "bedside-tables"
   },
+  {
+    slug: "classic-bedroom-wardrobe",
+    name: "Classic Bedroom Wardrobe",
+    description: "Handcrafted Teak Wood wardrobe showcasing traditional frame-and-panel doors with spacious internal configurations.",
+    images: ["/sub-cat/bed-room cubbord.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "48\"W x 22\"D x 78\"H",
+      Finish: "Natural Satin Polyurethane",
+      Assembly: "Professional installation recommended",
+      Warranty: "10-Year Warranty",
+      Craftsmanship: "Mortise and tenon joinery with premium soft-close hinges"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "wardrobes"
+  },
+  {
+    slug: "premium-bedroom-wardrobe-2",
+    name: "Premium Plavu Wardrobe",
+    description: "Superior quality wardrobe handcrafted from solid Plavu with customized drawers and safe storage compartments.",
+    images: ["/sub-cat/bed-room cubbord-2.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "60\"W x 24\"D x 84\"H",
+      Finish: "Wax Polish",
+      Assembly: "Professional installation recommended",
+      Warranty: "10-Year Warranty",
+      Craftsmanship: "Precision tongue-and-groove backing and hand-fitted drawers"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "wardrobes"
+  },
+  {
+    slug: "modern-teak-king-bed",
+    name: "Modern Teak King Bed",
+    description: "A gorgeous modern interpretation of the classic poster bed, carved using premium Teak Wood.",
+    images: ["/sub-cat/bed-room1.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "78\"W x 82\"L x 50\"H",
+      Finish: "Matte Lacquer",
+      Assembly: "Professional assembly included",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Hand-turned posts and solid plank platform"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "king-size-beds"
+  },
+  {
+    slug: "elegant-plavu-queen-bed",
+    name: "Elegant Plavu Queen Bed",
+    description: "Beautifully styled Plavu wood queen bed highlighting the golden-yellow natural grain flow.",
+    images: ["/sub-cat/bed-room2.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "64\"W x 82\"L x 45\"H",
+      Finish: "Warm Oil Glaze",
+      Assembly: "Professional assembly included",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Dovetail joints and hand-selected planks"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "queen-size-beds"
+  },
+  {
+    slug: "heritage-single-poster-bed",
+    name: "Heritage Single Poster Bed",
+    description: "Classic single bed crafted in Teak Wood with beautifully detailed spindles and posts.",
+    images: ["/sub-cat/bed-room3.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "38\"W x 78\"L x 72\"H",
+      Finish: "Antique Wax Polish",
+      Assembly: "Easy manual setup",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Hand-lathed posts with traditional motifs"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "single-and-poster-beds"
+  },
+  {
+    slug: "storage-bed-comfort",
+    name: "Anjili Wood Storage Bed",
+    description: "Extremely robust queen size bed crafted in Anjili Wood featuring heavy-duty underbed storage drawer modules.",
+    images: ["/sub-cat/bed-room4.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "64\"W x 82\"L x 40\"H",
+      Finish: "Satin Polyurethane",
+      Assembly: "Assembly required",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Integrated wooden drawer slide channels"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "beds-with-storage"
+  },
+  {
+    slug: "antique-bedroom-dresser",
+    name: "Antique Bedroom Dresser & Mirror",
+    description: "Curated dressing console with full-length mirror stand crafted from premium Teak Wood.",
+    images: ["/sub-cat/bed-room5.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "36\"W x 18\"D x 72\"H",
+      Finish: "French Polish Antique",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Carved mirror frame detailing"
+    },
+    categorySlug: "bedroom",
+    subcategorySlug: "dressers-and-mirrors"
+  },
 
   // Living
   {
@@ -217,7 +328,7 @@ export const productsData: Product[] = [
     slug: "premium-wooden-corner-stand",
     name: "Premium Wooden Corner Stand",
     description: "Stunning multi-tier corner display unit. Designed to optimize space while displaying your prized books, heirlooms, or decorative pieces.",
-    images: ["/products/living/corner-stand1.jpeg"],
+    images: ["/products/living/corner-stand1.png"],
     details: {
       Material: "Teak Wood",
       Dimensions: "24\"W x 24\"D x 60\"H",
@@ -230,20 +341,84 @@ export const productsData: Product[] = [
     subcategorySlug: "shoe-racks"
   },
   {
-    slug: "royal-heritage-dining-bench",
-    name: "Royal Heritage Bench & Chair",
-    description: "Bespoke solid Teak Wood long chair and bench designed for living areas. Provides comfortable seating with elegant classic back spindles.",
-    images: ["/products/chair/long wooden chair.jpeg"],
+    slug: "teak-coffee-table-living",
+    name: "Classic Teak Coffee Table",
+    description: "Beautifully structured coffee table in solid Teak Wood featuring a low profile design and smooth finish.",
+    images: ["/sub-cat/living1.jpg"],
     details: {
       Material: "Teak Wood",
-      Dimensions: "60\"W x 20\"D x 36\"H",
-      Finish: "Satin Walnut Polish",
+      Dimensions: "40\"W x 24\"D x 18\"H",
+      Finish: "Matte Lacquer",
       Assembly: "Fully assembled",
-      Warranty: "5-Year Warranty",
-      Craftsmanship: "Hand-shaped spindle backrests and contoured seating"
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Rounded edge design and sturdy mortise legs"
     },
     categorySlug: "living",
-    subcategorySlug: "long-bench"
+    subcategorySlug: "coffee-tables"
+  },
+  {
+    slug: "living-end-table-premium",
+    name: "Premium Plavu End Table",
+    description: "Compact accent end table carved in Plavu wood. Ideal companion next to sofas or lounge chairs.",
+    images: ["/sub-cat/living2.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "20\"W x 20\"D x 24\"H",
+      Finish: "Warm Stain Waxed",
+      Assembly: "Fully assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Classic Kerala square frame profile"
+    },
+    categorySlug: "living",
+    subcategorySlug: "side-and-end-tables"
+  },
+  {
+    slug: "display-shelves-living",
+    name: "Anjili Wood Display Unit",
+    description: "Stunning open display unit carved in Anjili Wood with traditional horizontal separator planks.",
+    images: ["/sub-cat/Display Shelves living.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "48\"W x 15\"D x 64\"H",
+      Finish: "Satin Walnut Stain",
+      Assembly: "Fully assembled",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Open modular shelves with joint braces"
+    },
+    categorySlug: "living",
+    subcategorySlug: "display-units"
+  },
+  {
+    slug: "open-bookshelf-living",
+    name: "Teak Wood Library Bookshelf",
+    description: "Exquisite multi-tiered open bookshelf handcrafted using solid Teak Wood.",
+    images: ["/sub-cat/shelves.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "36\"W x 12\"D x 72\"H",
+      Finish: "Polyurethane Clear Matte",
+      Assembly: "Fully assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Thick shelf planks with side safety panels"
+    },
+    categorySlug: "living",
+    subcategorySlug: "bookshelves"
+  },
+  {
+    slug: "designer-shoe-rack",
+    name: "Classic Shoe Storage Cabinet",
+    description: "Multi-shelved shoe storage cabinet with slatted doors to promote airflow. Handcrafted from solid Plavu.",
+    images: ["/sub-cat/Shoe Racks.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "32\"W x 14\"D x 38\"H",
+      Finish: "Natural Stain Matte",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Louvred / Slatted ventilation door design"
+    },
+    categorySlug: "living",
+    subcategorySlug: "shoe-racks"
   },
 
   // Dining
@@ -279,6 +454,70 @@ export const productsData: Product[] = [
     categorySlug: "dining",
     subcategorySlug: "dining-chairs-and-benches"
   },
+  {
+    slug: "royal-heritage-dining-bench",
+    name: "Royal Heritage Dining Bench & Chair",
+    description: "Bespoke solid Teak Wood long chair and bench designed for dining areas. Provides comfortable seating with elegant classic back spindles.",
+    images: ["/products/chair/long wooden chair.jpeg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "60\"W x 20\"D x 36\"H",
+      Finish: "Satin Walnut Polish",
+      Assembly: "Fully assembled",
+      Warranty: "5-Year Warranty",
+      Craftsmanship: "Hand-shaped spindle backrests and contoured seating"
+    },
+    categorySlug: "dining",
+    subcategorySlug: "dining-chairs-and-benches"
+  },
+  {
+    slug: "teak-4-seater-dining-set",
+    name: "Imperial Teak 4 Seater Dining Set",
+    description: "Traditional Teak Wood dining table accompanied by four solid handcrafted matching chairs.",
+    images: ["/sub-cat/dining1.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "48\"W x 48\"D x 30\"H",
+      Finish: "High Gloss Water Resistant",
+      Assembly: "Pre-assembled set",
+      Warranty: "10-Year Warranty",
+      Craftsmanship: "Premium joint alignment and ergonomic dining chairs"
+    },
+    categorySlug: "dining",
+    subcategorySlug: "4-seater-dining-sets"
+  },
+  {
+    slug: "premium-6-seater-dining-set",
+    name: "Royal Plavu 6 Seater Dining Set",
+    description: "Majestic six-seater dining set handcrafted in solid Plavu. Perfect for larger family gatherings.",
+    images: ["/sub-cat/dining2.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "72\"W x 40\"D x 30\"H",
+      Finish: "Silk Matte Polish",
+      Assembly: "Professional delivery setup",
+      Warranty: "10-Year Warranty",
+      Craftsmanship: "Deep tenon framing structure and double bracing"
+    },
+    categorySlug: "dining",
+    subcategorySlug: "6-seater-dining-sets"
+  },
+  {
+    slug: "dining-display-shelves-classic",
+    name: "Dining Display Shelves Classic",
+    description: "Ornamental open shelving cabinet designed specifically for showcasing culinary items in dining rooms. Crafted in Anjili Wood.",
+    images: ["/sub-cat/Display Shelves- dining.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "42\"W x 15\"D x 68\"H",
+      Finish: "Warm Teak Finish",
+      Assembly: "Fully assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Recessed wood panels and safety edge framing"
+    },
+    categorySlug: "dining",
+    subcategorySlug: "dining-chairs-and-benches"
+  },
 
   // Study
   {
@@ -296,6 +535,86 @@ export const productsData: Product[] = [
     },
     categorySlug: "study",
     subcategorySlug: "study-chairs"
+  },
+  {
+    slug: "classic-study-table",
+    name: "Classic Teak Study Table",
+    description: "Beautifully designed writing desk with custom drawers and a spacious top, crafted in Teak Wood.",
+    images: ["/sub-cat/study table.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "48\"W x 24\"D x 30\"H",
+      Finish: "Natural Lacquer",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Dovetailed organizer drawers"
+    },
+    categorySlug: "study",
+    subcategorySlug: "study-tables"
+  },
+  {
+    slug: "computer-desk-study",
+    name: "Plavu Computer Desk",
+    description: "Sturdy computer desk built in Plavu featuring a pull-out keyboard tray and cable management slots.",
+    images: ["/sub-cat/study1.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "52\"W x 28\"D x 30\"H",
+      Finish: "Polished Walnut Finish",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Reinforced frame with sliding tray mechanisms"
+    },
+    categorySlug: "study",
+    subcategorySlug: "computer-desks"
+  },
+  {
+    slug: "executive-desk-study",
+    name: "Bespoke Teak Executive Desk",
+    description: "Premium office study desk featuring dual side drawers cabinets and a large writing table surface.",
+    images: ["/sub-cat/study2.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "60\"W x 32\"D x 30\"H",
+      Finish: "Matte Polyurethane",
+      Assembly: "Professional assembly included",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Ancient flush panel joinery"
+    },
+    categorySlug: "study",
+    subcategorySlug: "executive-desks"
+  },
+  {
+    slug: "ergonomic-standing-desk",
+    name: "Anjili Wood Standing Desk",
+    description: "Beautiful height-adjustable desk featuring a gorgeous thick Anjili Wood tabletop.",
+    images: ["/sub-cat/Standing Desks.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "54\"W x 30\"D x 28\"-48\"H",
+      Finish: "Clear Oil Stain",
+      Assembly: "Assembly required (tools included)",
+      Warranty: "5-Year Tabletop Guarantee",
+      Craftsmanship: "Contour-bevelled edges and smooth surface planing"
+    },
+    categorySlug: "study",
+    subcategorySlug: "standing-desks"
+  },
+  {
+    slug: "study-table-compact",
+    name: "Compact Plavu Writing Desk",
+    description: "Space-saving writing table designed in solid Plavu, perfect for apartments or small study rooms.",
+    images: ["/sub-cat/study3.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "36\"W x 20\"D x 30\"H",
+      Finish: "Natural Stain Matte",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Minimalist joinery structure"
+    },
+    categorySlug: "study",
+    subcategorySlug: "study-tables"
   },
 
   // Storage Furniture
@@ -315,6 +634,38 @@ export const productsData: Product[] = [
     categorySlug: "storage-furniture",
     subcategorySlug: "chest-of-drawers-storage"
   },
+  {
+    slug: "wardrobe-3plus-door",
+    name: "Teak 3+ Door Master Wardrobe",
+    description: "Grand master bedroom wardrobe featuring multiple clothes rails, integrated shelving, and solid Teak Wood doors.",
+    images: ["/sub-cat/storage-furniture2.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "72\"W x 24\"D x 80\"H",
+      Finish: "Teak Polish Satin",
+      Assembly: "Professional installation required",
+      Warranty: "10-Year Warranty",
+      Craftsmanship: "Heavy timber build with internal storage customization"
+    },
+    categorySlug: "storage-furniture",
+    subcategorySlug: "3-plus-door-wardrobes"
+  },
+  {
+    slug: "shoe-rack-storage-unit",
+    name: "Plavu Utility Shoe Rack",
+    description: "Sturdy multi-level shoe organizer designed with closed doors in Plavu wood for hallways and entryways.",
+    images: ["/sub-cat/storage-furniture4.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "36\"W x 14\"D x 42\"H",
+      Finish: "Natural Satin Matte",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Mortise frame with ventilation slats"
+    },
+    categorySlug: "storage-furniture",
+    subcategorySlug: "shoe-racks-storage"
+  },
 
   // Pillars
   {
@@ -333,23 +684,103 @@ export const productsData: Product[] = [
     categorySlug: "pillars",
     subcategorySlug: "teak-wood-pillars"
   },
+  {
+    slug: "anjili-wood-pillar-premium",
+    name: "Anjili Wood Carved Pillar",
+    description: "Majestic structural pillar handcrafted from aged Anjili Wood, featuring traditional spiral engravings.",
+    images: ["/sub-cat/pillars2.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "10\" Diameter x 96\"H",
+      Finish: "Clear Protection Coat",
+      Assembly: "Structural installation required",
+      Warranty: "20-Year Guarantee",
+      Craftsmanship: "Hand-chiselled flutes and capital details"
+    },
+    categorySlug: "pillars",
+    subcategorySlug: "anjili-wood-pillars"
+  },
+  {
+    slug: "plavu-wood-pillar-heritage",
+    name: "Heritage Plavu Wood Pillar",
+    description: "Exquisite structural pillar crafted in Plavu, showcasing the beautiful golden hue typical of jackwood.",
+    images: ["/sub-cat/pillars3.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "11\" Diameter x 96\"H",
+      Finish: "French Polish Satin",
+      Assembly: "Structural installation required",
+      Warranty: "20-Year Guarantee",
+      Craftsmanship: "Turned profile details with capital supports"
+    },
+    categorySlug: "pillars",
+    subcategorySlug: "plavu-wood-pillars"
+  },
+  {
+    slug: "irumullu-wood-pillar-classic",
+    name: "Irumullu Wood Pillar",
+    description: "An authentic structural or decorative pillar carved from dense, heavy Irumullu wood.",
+    images: ["/sub-cat/pillars8.jpg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "10\" Diameter x 96\"H",
+      Finish: "Antique Wax Polish",
+      Assembly: "Structural installation required",
+      Warranty: "20-Year Guarantee",
+      Craftsmanship: "Heavy timber turnery and square base"
+    },
+    categorySlug: "pillars",
+    subcategorySlug: "irumullu-wood-pillars"
+  },
 
   // Office Room
   {
-    slug: "office-revolving-wooden-chair",
-    name: "Executive Revolving Wooden Chair",
-    description: "Ergonomically contoured Teak Wood chair built for office room setups.",
-    images: ["/products/chair/long wooden chair.jpeg"],
+    slug: "executive-desk-office",
+    name: "Professional Office Executive Desk",
+    description: "A grand desk in solid Teak Wood featuring custom filing shelves and cabinet spaces.",
+    images: ["/sub-cat/office-room04.jpg"],
     details: {
       Material: "Teak Wood",
-      Dimensions: "60\"W x 20\"D x 36\"H",
-      Finish: "Satin Walnut Polish",
-      Assembly: "Fully assembled",
-      Warranty: "5-Year Warranty",
-      Craftsmanship: "Traditional hand shaping and spindle backs"
+      Dimensions: "60\"W x 30\"D x 30\"H",
+      Finish: "Satin Polyurethane",
+      Assembly: "Pre-assembled",
+      Warranty: "10-Year Guarantee",
+      Craftsmanship: "Mortise and tenon panels with double braces"
     },
     categorySlug: "office-room",
-    subcategorySlug: "ergonomic-chairs-office"
+    subcategorySlug: "executive-desks-office"
+  },
+  {
+    slug: "computer-table-office",
+    name: "Office Computer Table",
+    description: "Sturdy and practical computer workstation crafted in Plavu wood with specialized keyboard drawer.",
+    images: ["/sub-cat/office-room01.jpg"],
+    details: {
+      Material: "Plavu",
+      Dimensions: "48\"W x 24\"D x 30\"H",
+      Finish: "Warm Stain Matte",
+      Assembly: "Pre-assembled",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Sturdy slide rails and side panel support"
+    },
+    categorySlug: "office-room",
+    subcategorySlug: "computer-tables"
+  },
+  {
+    slug: "standing-desk-office",
+    name: "Office Standing Desk Top",
+    description: "An adjustable desk module top carved in Anjili Wood for healthy working options.",
+    images: ["/sub-cat/office-room03.jpg"],
+    details: {
+      Material: "Anjili Wood",
+      Dimensions: "50\"W x 28\"D x 30\"-48\"H",
+      Finish: "Natural Lacquer Finish",
+      Assembly: "Assembly required",
+      Warranty: "5-Year Guarantee",
+      Craftsmanship: "Fitted metal insert joints and smooth top planing"
+    },
+    categorySlug: "office-room",
+    subcategorySlug: "standing-desks-office"
   },
 
   // Others
