@@ -33,7 +33,7 @@ export const categoriesData: Category[] = [
   {
     name: "Living",
     slug: "living",
-    description: "Immerse yourself in handcrafted luxury. From premium teak coffee tables to custom TV consoles, elevate your central living space with heirloom-grade wooden artistry.",
+    description: "Immerse yourself in handcrafted luxury. From premium Teak Wood coffee tables to custom TV consoles, elevate your central living space with heirloom-grade wooden artistry.",
     image: "/sub-cat/living1.jpg",
     subcategories: [
       { name: "Coffee Tables", slug: "coffee-tables" },
@@ -43,13 +43,14 @@ export const categoriesData: Category[] = [
       { name: "TV Consoles", slug: "tv-consoles" },
       { name: "Bookshelves", slug: "bookshelves" },
       { name: "Display Units", slug: "display-units" },
-      { name: "Shoe Racks", slug: "shoe-racks" }
+      { name: "Shoe Racks", slug: "shoe-racks" },
+      { name: "Long Bench", slug: "long-bench" }
     ]
   },
   {
     name: "Bedroom",
     slug: "bedroom",
-    description: "Sanctuaries of absolute rest. Discover our signature solid wild jack, jackwood, and teak beds, meticulously carved bedside tables, and bespoke master wardrobes designed for life.",
+    description: "Sanctuaries of absolute rest. Discover our signature solid Plavu, Anjili Wood, and Teak Wood beds, meticulously carved bedside tables, and bespoke master wardrobes designed for life.",
     image: "/sub-cat/bed-room1.jpg",
     subcategories: [
       { name: "King Size Beds", slug: "king-size-beds" },
@@ -66,7 +67,7 @@ export const categoriesData: Category[] = [
   {
     name: "Dining",
     slug: "dining",
-    description: "Feast in grandeur. Crafted from single-slab premium woods, our dining tables and chairs create a dramatic, unforgettable setting for gatherings that endure across generations.",
+    description: "Feast in grandeur. Crafted from single-slab Teak Wood, Anjili Wood, and Plavu, our dining tables and chairs create a dramatic, unforgettable setting for gatherings that endure across generations.",
     image: "/sub-cat/dining1.jpg",
     subcategories: [
       { name: "4 Seater Dining Sets", slug: "4-seater-dining-sets" },
@@ -78,7 +79,7 @@ export const categoriesData: Category[] = [
   {
     name: "Study",
     slug: "study",
-    description: "Focus met with refined heritage. Elevate your creative or professional sanctuary with organic executive desks, ergonomic wooden chairs, and bespoke filing libraries.",
+    description: "Focus met with refined heritage. Elevate your creative or professional sanctuary with organic executive desks, ergonomic Teak Wood chairs, and bespoke filing libraries.",
     image: "/sub-cat/study1.jpg",
     subcategories: [
       { name: "Study Tables", slug: "study-tables" },
@@ -94,7 +95,7 @@ export const categoriesData: Category[] = [
   {
     name: "Storage Furniture",
     slug: "storage-furniture",
-    description: "Elegant storage solutions that double as visual statements. Premium multi-door wardrobes, handcrafted shoe racks, and robust vintage trunks.",
+    description: "Elegant storage solutions that double as visual statements. Premium wardrobes, handcrafted shoe racks, and robust vintage trunks.",
     image: "/sub-cat/storage-furniture1.jpg",
     subcategories: [
       { name: "2 Door Wardrobes", slug: "2-door-wardrobes" },
@@ -106,7 +107,7 @@ export const categoriesData: Category[] = [
   {
     name: "Pillars",
     slug: "pillars",
-    description: "Architectural monuments for your home. Carved in antique timber or polished sandstone, our pillars serve as majestic structural and decorative details.",
+    description: "Architectural monuments for your home. Carved in Teak Wood, Anjili Wood, or Plavu, our pillars serve as majestic structural and decorative details.",
     image: "/sub-cat/pillars1.jpg",
     subcategories: [
       { name: "Teak Wood Pillars", slug: "teak-wood-pillars" },
@@ -149,15 +150,15 @@ export const productsData: Product[] = [
   {
     slug: "royal-teak-king-bed",
     name: "Royal Teak King Size Bed",
-    description: "Premium handcrafted solid teak wood king size bed. Crafted with traditional joinery, this bed features elegant headboard carving and robust structure built to last generations.",
+    description: "Premium handcrafted solid Teak Wood king size bed. Crafted with traditional joinery, this bed features elegant headboard carving and robust structure built to last generations.",
     images: ["/products/bed-room/bed.jpg"],
     details: {
-      Material: "Premium Burma Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "78\"W x 82\"L x 48\"H",
       Finish: "Hand-burnished Natural Oil & Wax",
       Assembly: "Professional assembly included",
       Warranty: "10-Year Structural Guarantee",
-      Craftsmanship: "Mortise and tenon joinery with hand-carved detailing"
+      Craftsmanship: "Mortise and tenon joinery with hand-carving detailing"
     },
     categorySlug: "bedroom",
     subcategorySlug: "king-size-beds"
@@ -165,10 +166,10 @@ export const productsData: Product[] = [
   {
     slug: "heritage-jackwood-queen-bed",
     name: "Heritage Jackwood Queen Size Bed",
-    description: "Elegant solid Jackwood queen size bed. Offers a warm golden-brown hue that deepens beautifully over time. Built with maximum comfort and stability in mind.",
+    description: "Elegant solid Plavu queen size bed. Offers a warm golden-brown hue that deepens beautifully over time. Built with maximum comfort and stability in mind.",
     images: ["/products/bed-room/bed.png"],
     details: {
-      Material: "Solid Indian Jackwood",
+      Material: "Plavu",
       Dimensions: "64\"W x 82\"L x 44\"H",
       Finish: "Silk Polyurethane Matte",
       Assembly: "Professional assembly included",
@@ -181,10 +182,10 @@ export const productsData: Product[] = [
   {
     slug: "classic-bedside-dresser-console",
     name: "Classic Bedside Dresser Console",
-    description: "A versatile dresser console and bedside companion crafted from high-quality wood. Features ample drawer storage and a polished top surface.",
+    description: "A versatile dresser console and bedside companion crafted from high-quality Teak Wood and Plavu. Features ample drawer storage and a polished top surface.",
     images: ["/products/bed-room/console2.jpg"],
     details: {
-      Material: "Solid Teak Wood & Jackwood",
+      Material: "Teak Wood & Plavu",
       Dimensions: "42\"W x 18\"D x 32\"H",
       Finish: "Warm Teak Stain Matte",
       Assembly: "Pre-assembled",
@@ -194,15 +195,15 @@ export const productsData: Product[] = [
     categorySlug: "bedroom",
     subcategorySlug: "bedside-tables"
   },
-  
+
   // Living
   {
     slug: "traditional-easy-chair-charu-kasera",
     name: "Traditional Easy Chair (Charu Kasera)",
-    description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation. Handcrafted in premium teak wood with high-quality cane weaving.",
+    description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation. Handcrafted in premium Teak Wood with high-quality cane weaving.",
     images: ["/products/living/charu-kasera1.jpeg"],
     details: {
-      Material: "First-Class Burma Teak Wood & Natural Cane",
+      Material: "Teak Wood",
       Dimensions: "30\"W x 54\"D x 38\"H",
       Finish: "Hand-rubbed French Polish",
       Assembly: "Fully assembled",
@@ -218,7 +219,7 @@ export const productsData: Product[] = [
     description: "Stunning multi-tier corner display unit. Designed to optimize space while displaying your prized books, heirlooms, or decorative pieces.",
     images: ["/products/living/corner-stand1.jpeg"],
     details: {
-      Material: "Solid Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "24\"W x 24\"D x 60\"H",
       Finish: "Polished Rosewood Finish",
       Assembly: "Fully assembled",
@@ -228,14 +229,31 @@ export const productsData: Product[] = [
     categorySlug: "living",
     subcategorySlug: "shoe-racks"
   },
+  {
+    slug: "royal-heritage-dining-bench",
+    name: "Royal Heritage Bench & Chair",
+    description: "Bespoke solid Teak Wood long chair and bench designed for living areas. Provides comfortable seating with elegant classic back spindles.",
+    images: ["/products/chair/long wooden chair.jpeg"],
+    details: {
+      Material: "Teak Wood",
+      Dimensions: "60\"W x 20\"D x 36\"H",
+      Finish: "Satin Walnut Polish",
+      Assembly: "Fully assembled",
+      Warranty: "5-Year Warranty",
+      Craftsmanship: "Hand-shaped spindle backrests and contoured seating"
+    },
+    categorySlug: "living",
+    subcategorySlug: "long-bench"
+  },
+
   // Dining
   {
     slug: "single-slab-teak-dining-table",
     name: "Single-Slab Teak Dining Table",
-    description: "A spectacular dining table made from a curated single slab of premium aged teak wood. Showcases gorgeous live edges and dramatic wood grains.",
+    description: "A spectacular dining table made from a curated single slab of premium aged Teak Wood. Showcases gorgeous live edges and dramatic wood grains.",
     images: ["/products/dining/dining-table.jpg"],
     details: {
-      Material: "Aged Teak Wood (Single Slab)",
+      Material: "Teak Wood",
       Dimensions: "72\"W x 36\"D x 30\"H",
       Finish: "Water-resistant Polyurethane Matte",
       Assembly: "Legs require attachment (hardware included)",
@@ -248,10 +266,10 @@ export const productsData: Product[] = [
   {
     slug: "classic-dining-display-shelves",
     name: "Classic Dining Room Display Shelves",
-    description: "Premium wooden display rack with open shelving, ideal for displaying fine chinaware, glassware, or decorative plates in the dining area.",
+    description: "Premium Anjili Wood display rack with open shelving, ideal for displaying fine chinaware, glassware, or decorative plates in the dining area.",
     images: ["/products/dining/display-shelves.jpeg", "/products/dining/display-shelves2.jpeg"],
     details: {
-      Material: "Premium Wild Jack Wood",
+      Material: "Anjili Wood",
       Dimensions: "48\"W x 16\"D x 72\"H",
       Finish: "Natural Teak Polish",
       Assembly: "Fully assembled",
@@ -261,31 +279,15 @@ export const productsData: Product[] = [
     categorySlug: "dining",
     subcategorySlug: "dining-chairs-and-benches"
   },
-  {
-    slug: "royal-heritage-dining-bench",
-    name: "Royal Heritage Dining Bench & Chair",
-    description: "Bespoke solid wood long chair and bench designed for dining areas. Provides comfortable seating with elegant classic back spindles.",
-    images: ["/products/chair/long wooden chair.jpeg"],
-    details: {
-      Material: "Burma Teak Wood",
-      Dimensions: "60\"W x 20\"D x 36\"H",
-      Finish: "Satin Walnut Polish",
-      Assembly: "Fully assembled",
-      Warranty: "5-Year Warranty",
-      Craftsmanship: "Hand-shaped spindle backrests and contoured seating"
-    },
-    categorySlug: "dining",
-    subcategorySlug: "dining-chairs-and-benches"
-  },
 
   // Study
   {
     slug: "study-wooden-chair",
     name: "Traditional Teak Study Chair",
-    description: "Ergonomically contoured solid wood study chair built for study tables and writing desk companion setups.",
+    description: "Ergonomically contoured Teak Wood study chair built for study tables and writing desk companion setups.",
     images: ["/products/chair/long wooden chair.jpeg"],
     details: {
-      Material: "Solid Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "18\"W x 20\"D x 36\"H",
       Finish: "Satin Polyurethane",
       Assembly: "Fully assembled",
@@ -300,10 +302,10 @@ export const productsData: Product[] = [
   {
     slug: "traditional-kerala-storage-pathayam",
     name: "Traditional Kerala Storage Pathayam",
-    description: "Large solid wood storage chest inspired by traditional grain pathayams. Excellent storage potential for bedrooms or hallways.",
+    description: "Large solid Plavu storage chest inspired by traditional grain pathayams. Excellent storage potential for bedrooms or hallways.",
     images: ["/products/others/ari-pathayam1.jpeg"],
     details: {
-      Material: "Indian Wild Jackwood",
+      Material: "Plavu",
       Dimensions: "48\"W x 30\"D x 36\"H",
       Finish: "Natural Beeswax",
       Assembly: "Fully assembled",
@@ -318,15 +320,15 @@ export const productsData: Product[] = [
   {
     slug: "hand-carved-teak-wood-pillar",
     name: "Hand-Carved Teak Wood Pillar",
-    description: "Architectural masterpiece pillar carved from a single log of premium teak wood. Features South Indian temple design details.",
+    description: "Architectural masterpiece pillar carved from a single log of premium Teak Wood. Features South Indian temple design details.",
     images: ["/products/pillar/pillar1.jpeg", "/products/pillar/pillar2.jpeg"],
     details: {
-      Material: "Aged Burma Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "12\" Diameter x 96\"H",
       Finish: "Natural Antique Polish",
       Assembly: "Structural installation required",
       Warranty: "25-Year Guarantee",
-      Craftsmanship: "Meticulously hand-carved by heritage artisans"
+      Craftsmanship: "Meticulously hand-carving"
     },
     categorySlug: "pillars",
     subcategorySlug: "teak-wood-pillars"
@@ -336,10 +338,10 @@ export const productsData: Product[] = [
   {
     slug: "office-revolving-wooden-chair",
     name: "Executive Revolving Wooden Chair",
-    description: "Ergonomically contoured solid wood chair built for office room setups.",
+    description: "Ergonomically contoured Teak Wood chair built for office room setups.",
     images: ["/products/chair/long wooden chair.jpeg"],
     details: {
-      Material: "Burma Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "60\"W x 20\"D x 36\"H",
       Finish: "Satin Walnut Polish",
       Assembly: "Fully assembled",
@@ -354,10 +356,10 @@ export const productsData: Product[] = [
   {
     slug: "traditional-kerala-amadapetti-box",
     name: "Traditional Kerala Amadapetti Box",
-    description: "A classic heritage jewelry box (Amadapetti) handcrafted with brass accents. Features secret drawers.",
+    description: "A classic heritage jewelry box (Amadapetti) handcrafted with brass accents from Teak Wood. Features secret drawers.",
     images: ["/products/others/amadapetti.png"],
     details: {
-      Material: "Solid Rosewood & Brass",
+      Material: "Teak Wood & Brass",
       Dimensions: "18\"W x 12\"D x 10\"H",
       Finish: "Natural Oil Polish",
       Assembly: "Pre-assembled",
@@ -370,10 +372,10 @@ export const productsData: Product[] = [
   {
     slug: "antique-wooden-ari-pathayam",
     name: "Antique Wooden Rice Chest (Ari Pathayam)",
-    description: "A massive, authentic wooden chest traditionally used for storing grain. Handcrafted from heavy hardwood slabs.",
+    description: "A massive, authentic Plavu chest traditionally used for storing grain. Handcrafted from heavy wood slabs.",
     images: ["/products/others/ari-pathayam1.jpeg"],
     details: {
-      Material: "Indian Wild Jackwood",
+      Material: "Plavu",
       Dimensions: "48\"W x 30\"D x 36\"H",
       Finish: "Wax Polish",
       Assembly: "Fully assembled",
@@ -386,10 +388,10 @@ export const productsData: Product[] = [
   {
     slug: "hand-rail-others",
     name: "Architectural Hand Rail component",
-    description: "Intricately carved hand rail architectural component for premium homes.",
+    description: "Intricately carved Teak Wood hand rail architectural component for premium homes.",
     images: ["/products/others/hand-rail1.jpeg"],
     details: {
-      Material: "Solid Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "72\"W x 4\"D x 18\"H",
       Finish: "Antique Wax Finish",
       Assembly: "Mounting hardware not included",
@@ -402,10 +404,10 @@ export const productsData: Product[] = [
   {
     slug: "wooden-pannel-others",
     name: "Ornamental Wooden Wall Panel",
-    description: "Intricately carved wooden wall panel to serve as decorative architectural details.",
+    description: "Intricately carved Teak Wood wall panel to serve as decorative architectural details.",
     images: ["/products/others/wooden-pannel1.jpeg"],
     details: {
-      Material: "Solid Teak Wood",
+      Material: "Teak Wood",
       Dimensions: "72\"W x 4\"D x 18\"H",
       Finish: "Antique Wax Finish",
       Assembly: "Mounting hardware not included",
@@ -418,10 +420,10 @@ export const productsData: Product[] = [
   {
     slug: "traditional-easy-chair-charu-kasera-others",
     name: "Traditional Easy Chair (Charu Kasera)",
-    description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation.",
+    description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation. Handcrafted in premium Teak Wood with natural cane backing.",
     images: ["/products/living/charu-kasera1.jpeg"],
     details: {
-      Material: "First-Class Burma Teak Wood & Natural Cane",
+      Material: "Teak Wood",
       Dimensions: "30\"W x 54\"D x 38\"H",
       Finish: "Hand-rubbed French Polish",
       Assembly: "Fully assembled",
@@ -434,7 +436,7 @@ export const productsData: Product[] = [
   {
     slug: "handcrafted-pooja-cabinet-others",
     name: "Handcrafted Pooja Cabinet",
-    description: "Sacred prayer altar built with beautiful temple arch styling and intricate lattice cabinet doors.",
+    description: "Sacred prayer altar built with beautiful temple arch styling from Teak Wood and intricate lattice cabinet doors.",
     images: ["/products/others/pooja-cabinet1.jpeg"],
     details: {
       Material: "Teak Wood & Brass Fittings",

@@ -15,11 +15,11 @@ const topSellers = [
     image: "/products/bed.jpg",
     href: "/product/royal-teak-bed"
   },
-  {
-    title: "Classic Wild Jack & Jackwood Sofa",
-    image: "/products/vintage-sofa.jpg",
-    href: "/product/classic-wild-jack-and-jackwood-sofa"
-  },
+  // {
+  //   title: "Classic Wild Jack & Jackwood Sofa",
+  //   image: "/products/vintage-sofa.jpg",
+  //   href: "/product/classic-wild-jack-and-jackwood-sofa"
+  // },
   {
     title: "Artisan Dining Set",
     image: "/products/dining-table.jpg",
@@ -78,7 +78,15 @@ export default function ProductList() {
     const currentX = x.get();
     const targetX = direction === "prev" ? currentX + scrollAmount : currentX - scrollAmount;
     animate(x, targetX, {
-      type: "spring", stiffness: 400, damping: 50,
+      type: "spring",
+      stiffness: 400,
+      damping: 50,
+      onUpdate: (latest) => {
+        if (halfWidth) {
+          if (latest > 0) x.set(latest - halfWidth);
+          else if (latest < -halfWidth) x.set(latest + halfWidth);
+        }
+      },
       onComplete: () => setIsAnimating(false)
     });
   };
@@ -132,9 +140,16 @@ export default function ProductList() {
               className="flex gap-4 w-max"
               style={{ x }}
               drag="x"
-              dragConstraints={{ right: 0, left: Math.min(0, -(carouselWidth - containerWidth)) }}
+              // Remove dragConstraints for continuous effect, wrapping is handled by onUpdate
               dragElastic={0.1}
               onDragStart={() => setIsDragging(true)}
+              onUpdate={() => {
+                const currentX = x.get();
+                if (halfWidth) {
+                  if (currentX > 0) x.set(currentX - halfWidth);
+                  else if (currentX < -halfWidth) x.set(currentX + halfWidth);
+                }
+              }}
               onDragEnd={() => setIsDragging(false)}
               whileTap={{ cursor: "grabbing" }}
             >
