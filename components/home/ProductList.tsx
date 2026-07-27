@@ -11,24 +11,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
  */
 const topSellers = [
   {
-    title: "The Royal Teak Bed",
-    image: "/products/bed.jpg",
-    href: "/product/royal-teak-bed"
+    title: "King Size Bed",
+    image: "/products/bed-room/bed.jpg",
+    href: "/product/king-size-bed"
   },
-  // {
-  //   title: "Classic Wild Jack & Jackwood Sofa",
-  //   image: "/products/vintage-sofa.jpg",
-  //   href: "/product/classic-wild-jack-and-jackwood-sofa"
-  // },
+  {
+    title: "Long Wooden Chair",
+    image: "/products/chair/long wooden chair.jpeg",
+    href: "/product/long-wooden-chair"
+  },
   {
     title: "Artisan Dining Set",
-    image: "/products/dining-table.jpg",
+    image: "/products/dining/dining-table.jpg",
     href: "/product/artisan-dining"
   },
   {
-    title: "Minimalist Console",
-    image: "/products/console2.jpg",
-    href: "/product/minimalist-console"
+    title: "Corner Stand",
+    image: "/products/living/corner-stand1.jpeg",
+    href: "/product/corner-stand"
   },
 ];
 

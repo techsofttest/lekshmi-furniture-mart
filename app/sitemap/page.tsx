@@ -120,18 +120,18 @@ const sections = [
             { label: "Decorative Pillars", href: "/products/pillars/decorative-pillars" },
         ],
     },
-    {
-        icon: ShoppingBag,
-        title: "Furnishing",
-        links: [
-            { label: "Bedsheets", href: "/products/furnishing/bedsheets" },
-            { label: "Blankets & Dohars", href: "/products/furnishing/blankets-and-dohars" },
-            { label: "Pillows & Cushions", href: "/products/furnishing/pillows-and-cushions" },
-            { label: "Carpets & Rugs", href: "/products/furnishing/carpets-and-rugs" },
-            { label: "Window Curtains", href: "/products/furnishing/window-curtains" },
-            { label: "Door Curtains", href: "/products/furnishing/door-curtains" },
-        ],
-    },
+    // {
+    //     icon: ShoppingBag,
+    //     title: "Furnishing",
+    //     links: [
+    //         { label: "Bedsheets", href: "/products/furnishing/bedsheets" },
+    //         { label: "Blankets & Dohars", href: "/products/furnishing/blankets-and-dohars" },
+    //         { label: "Pillows & Cushions", href: "/products/furnishing/pillows-and-cushions" },
+    //         { label: "Carpets & Rugs", href: "/products/furnishing/carpets-and-rugs" },
+    //         { label: "Window Curtains", href: "/products/furnishing/window-curtains" },
+    //         { label: "Door Curtains", href: "/products/furnishing/door-curtains" },
+    //     ],
+    // },
     {
         icon: Brush,
         title: "Services",

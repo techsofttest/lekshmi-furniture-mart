@@ -17,14 +17,14 @@ const footerLinks = [
     {
         title: "OUR CATALOG",
         items: [
-            { name: "Living", href: "/products/living/coffee-tables" },
-            { name: "Bedroom", href: "/products/bedroom/king-size-beds" },
-            { name: "Dining", href: "/products/dining/4-seater-dining-sets" },
-            { name: "Study", href: "/products/study/study-tables" },
-            { name: "Storage Furniture", href: "/products/storage-furniture/2-door-wardrobes" },
-            { name: "Pillars", href: "/products/pillars/teak-wood-pillars" },
-            { name: "Furnishing", href: "/products/furnishing/bedsheets" },
-            { name: "Office Room", href: "/products/office-room/executive-desks-office" },
+            { name: "Living", href: "/products/living/all" },
+            { name: "Bedroom", href: "/products/bedroom/all" },
+            { name: "Dining", href: "/products/dining/all" },
+            { name: "Study", href: "/products/study/all" },
+            { name: "Storage Furniture", href: "/products/storage-furniture/all" },
+            { name: "Pillars", href: "/products/pillars/all" },
+            { name: "Office Room", href: "/products/office-room/all" },
+            { name: "Others", href: "/products/others/all" },
         ],
     },
     {

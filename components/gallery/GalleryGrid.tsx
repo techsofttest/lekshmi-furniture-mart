@@ -24,8 +24,8 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 2,
-    src: "/products/vintage-sofa.jpg",
-    title: "Imperial Vintage Sofa",
+    src: "/products/chair/long wooden chair.jpeg",
+    title: "Long Wooden Chair",
     category: "living",
     wood: "Solid Wild Jack & Jackwood",
     description: "Intricately hand-carved floral motifs with royal crimson fabric.",
@@ -40,8 +40,8 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 4,
-    src: "/products/bed.jpg",
-    title: "Heritage Master Bed",
+    src: "/products/bed-room/bed.jpg",
+    title: "King Size Bed",
     category: "bedroom",
     wood: "Seasoned Teakwood",
     description: "Low-slung minimalist bed with integrated solid teak side tables.",
@@ -56,7 +56,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 6,
-    src: "/products/dining-table.jpg",
+    src: "/products/dining/dining-table.jpg",
     title: "Artisanal Live-Edge Set",
     category: "dining",
     wood: "Solid Wild Jack & Jackwood",

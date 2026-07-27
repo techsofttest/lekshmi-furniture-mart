@@ -5,6 +5,7 @@ import ProjectsList from "@/components/projects/ProjectsList";
 import Timeline from "@/components/projects/Timeline";
 import ArchitectCTA from "@/components/projects/ArchitectCTA";
 import CTA from "@/components/home/CTA";
+import HeritageProjects from "@/components/home/HeritageProjects";
 
 export default function ClientsPage() {
   const containerVariants = {
@@ -33,7 +34,10 @@ export default function ClientsPage() {
 
       <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16">
         {/* Project Showcases */}
-        <ProjectsList />
+        {/* <ProjectsList /> */}
+
+        {/* Heritage Projects Carousel */}
+        <HeritageProjects />
 
         {/* Collaboration Process */}
         <Timeline
