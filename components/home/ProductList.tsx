@@ -16,9 +16,9 @@ const topSellers = [
     href: "/product/royal-teak-bed"
   },
   {
-    title: "Classic Rosewood Sofa",
+    title: "Classic Wild Jack & Jackwood Sofa",
     image: "/products/vintage-sofa.jpg",
-    href: "/product/classic-rosewood-sofa"
+    href: "/product/classic-wild-jack-and-jackwood-sofa"
   },
   {
     title: "Artisan Dining Set",

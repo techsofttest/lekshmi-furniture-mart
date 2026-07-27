@@ -16,38 +16,26 @@ export default async function SubcategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  // Find the subcategory or item
   let subcategoryName = "";
-  let parentSubcategoryName = "";
-  const targetSlugs: string[] = [subcategorySlug];
+  let subcategoryProducts = [];
 
-  for (const sub of category.subcategories) {
-    if (sub.slug === subcategorySlug) {
-      subcategoryName = sub.name;
-      sub.items.forEach((item) => targetSlugs.push(item.slug));
-      break;
+  if (subcategorySlug === "all") {
+    subcategoryName = `All ${category.name}`;
+    subcategoryProducts = productsData.filter((p) => p.categorySlug === categorySlug);
+  } else {
+    // Find the subcategory
+    const subcategory = category.subcategories.find((s) => s.slug === subcategorySlug);
+    if (!subcategory) {
+      notFound();
     }
-    const item = sub.items.find((i) => i.slug === subcategorySlug);
-    if (item) {
-      subcategoryName = item.name;
-      parentSubcategoryName = sub.name;
-      break;
-    }
+    subcategoryName = subcategory.name;
+    subcategoryProducts = productsData.filter(
+      (p) => p.categorySlug === categorySlug && p.subcategorySlug === subcategorySlug
+    );
   }
 
-  if (!subcategoryName) {
-    notFound();
-  }
-
-  const subcategoryProducts = productsData.filter(
-    (p) => p.categorySlug === categorySlug && targetSlugs.includes(p.subcategorySlug)
-  );
-
-  // Sibling items for sidebar navigation
-  const parentSub = category.subcategories.find((s) =>
-    s.slug === subcategorySlug || s.items.some((i) => i.slug === subcategorySlug)
-  );
-  const siblingItems = parentSub?.items || [];
+  // Sibling items for sidebar navigation (all subcategories under this category)
+  const siblingItems = category.subcategories;
 
   return (
     <div className="flex flex-col w-full bg-white">
@@ -57,7 +45,7 @@ export default async function SubcategoryPage({ params }: PageProps) {
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 flex items-center gap-2 text-xs font-sans text-[#2A1C14]/50">
           <Link href="/" className="hover:text-[#592915] transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href={`/products/${category.slug}/${category.subcategories[0].items[0].slug}`} className="hover:text-[#592915] transition-colors">{category.name}</Link>
+          <Link href={`/products/${category.slug}/all`} className="hover:text-[#592915] transition-colors">{category.name}</Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-[#592915] font-semibold">{subcategoryName}</span>
         </div>
@@ -70,9 +58,18 @@ export default async function SubcategoryPage({ params }: PageProps) {
           {/* Sidebar — Sibling Category Navigation */}
           <aside className="w-full lg:w-56 xl:w-64 shrink-0 lg:sticky lg:top-28 self-start lg:border-r lg:border-gray-200 lg:pr-8">
             <h3 className="text-[10px] uppercase tracking-[0.2em] text-[#592915] font-bold mb-4 font-sans">
-              {parentSubcategoryName || parentSub?.name || category.name}
+              {category.name}
             </h3>
             <nav className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
+              <Link
+                href={`/products/${category.slug}/all`}
+                className={`whitespace-nowrap text-sm font-sans px-3 py-2 rounded-sm transition-all duration-200 ${subcategorySlug === "all"
+                  ? "bg-[#592915] text-white font-semibold"
+                  : "text-[#2A1C14]/65 hover:bg-[#F4ECE1]/60 hover:text-[#592915]"
+                  }`}
+              >
+                All
+              </Link>
               {siblingItems.map((item) => {
                 const isActive = item.slug === subcategorySlug;
                 return (

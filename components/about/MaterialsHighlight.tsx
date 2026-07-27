@@ -13,10 +13,10 @@ const materials = [
     number: "01",
   },
   {
-    label: "Kerala Rosewood (Eetti)",
-    title: "Lustrous Deep Crimson",
+    label: "Kerala Wild Jack (Anjili) & Jackwood (Plavu)",
+    title: "Warm Golden & Timber Elegance",
     description:
-      "A highly prized exotic wood featuring rich dark streaks and dark brown-to-purple tones. Our Rosewood is meticulously hand-polished to elevate its natural luster, making it the ultimate selection for royal-grade beds and cabinets.",
+      "Highly prized indigenous Kerala woods featuring warm golden-yellow to rich brown tones that darken beautifully with age. Both Wild Jack and Jackwood are celebrated for their superb stability, resistance to decay, and traditional prestige in royal-grade Kerala architecture and heirloom furniture.",
 
     number: "02",
   },
@@ -68,7 +68,7 @@ export default function MaterialsHighlight() {
             </span>
             <h2 className="text-xl md:text-2xl font-serif text-white leading-tight">
               The Soul of Lekshmi:<br />
-              <span className="italic">Teak &amp; Rosewood</span>
+              <span className="italic">Teak, Wild Jack &amp; Jackwood</span>
             </h2>
           </motion.div>
 

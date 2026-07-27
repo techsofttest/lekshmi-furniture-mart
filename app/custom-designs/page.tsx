@@ -31,7 +31,7 @@ export default function CustomDesignsPage() {
             <InnerPageHero
                 kicker="Bespoke Creations"
                 title="Your Vision, Our Craftsmanship"
-                subtitle="Tailored furniture from premium Teak & Rosewood"
+                subtitle="Tailored furniture from premium Teak, Wild Jack & Jackwood"
             />
 
             {/* Before & After Slider Section */}

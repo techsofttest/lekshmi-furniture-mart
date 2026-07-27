@@ -21,7 +21,7 @@ const slides = [
   {
     id: 2,
     title: "Heritage Grade\nBedroom Elegance",
-    description: "Handcrafted solid teak and rosewood beds that bring warmth, history, and uncompromising quality to your personal sanctuary.",
+    description: "Handcrafted solid teak, wild jack, and jackwood beds that bring warmth, history, and uncompromising quality to your personal sanctuary.",
     image: "/banner/banner-6.png",
     cta: "Explore Bedrooms",
     href: "/category/bedroom",

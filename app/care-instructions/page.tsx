@@ -39,9 +39,9 @@ const woodTypes = [
         color: "#8B5E3C",
     },
     {
-        name: "Rosewood",
-        tagline: "Rich Grain, Timeless Character",
-        care: "Dust regularly with a soft dry cloth. Use a mild furniture polish occasionally. Keep away from heat sources and direct sunlight to prevent colour fading.",
+        name: "Wild Jack & Jackwood",
+        tagline: "Golden Lustre, Resilient Nature",
+        care: "Dust regularly with a soft dry cloth. Keep away from excessive moisture and direct sunlight to preserve the warm golden hues.",
         color: "#6B2D2D",
     },
     {
@@ -112,7 +112,7 @@ const specialCare = [
 const faqs = [
     {
         question: "How often should I polish my solid wood furniture?",
-        answer: "For most hardwoods like teak and rosewood, polishing once every 6–12 months is sufficient. Over-polishing can clog the wood's pores. Always use a natural wax or oil-based polish recommended for your specific wood type."
+        answer: "For most hardwoods like teak, wild jack, and jackwood, polishing once every 6–12 months is sufficient. Over-polishing can clog the wood's pores. Always use a natural wax or oil-based polish recommended for your specific wood type."
     },
     {
         question: "What should I do if I spill water on my furniture?",
@@ -161,7 +161,7 @@ export default function CareInstructionsPage() {
                     <div className="w-14 h-[1.5px] bg-[#592915]/30 mx-auto mb-6" />
                     <p className="text-[#2A1C14]/65 font-sans text-sm md:text-base leading-relaxed">
                         Every piece from Lekshmi Furniture Mart is crafted from premium solid hardwoods
-                        — teak, rosewood, sheesham, and more. With the right care, these natural materials
+                        — teak, wild jack, jackwood, sheesham, and more. With the right care, these natural materials
                         reward you with decades of beauty. Follow this guide to protect your investment
                         and honour the craft within each piece.
                     </p>

@@ -18,7 +18,7 @@ const timelineSteps = [
     phase: "02",
     title: "Wood Sourcing & Seasoning",
     description:
-      "Each log of Nilambur Teak or Kerala Rosewood is handpicked and undergoes rigorous seasoning to ensure structural integrity and lifetime endurance.",
+      "Each log of Nilambur Teak or Kerala Wild Jack & Jackwood is handpicked and undergoes rigorous seasoning to ensure structural integrity and lifetime endurance.",
   },
   {
     phase: "03",

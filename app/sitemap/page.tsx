@@ -71,7 +71,7 @@ const sections = [
             { label: "Wardrobes", href: "/products/bedroom/wardrobes" },
             { label: "Bedside Tables", href: "/products/bedroom/bedside-tables" },
             { label: "Dressers & Mirrors", href: "/products/bedroom/dressers-and-mirrors" },
-            { label: "Chest of Drawers", href: "/products/bedroom/chest-of-drawers" },
+            { label: "Kerala Box", href: "/products/bedroom/chest-of-drawers" },
         ],
     },
     {
@@ -92,9 +92,9 @@ const sections = [
             { label: "Computer Desks", href: "/products/study/computer-desks" },
             { label: "Executive Desks", href: "/products/study/executive-desks" },
             { label: "Standing Desks", href: "/products/study/standing-desks" },
-            { label: "Ergonomic Chairs", href: "/products/study/ergonomic-chairs" },
+            { label: "Revolving Chair", href: "/products/study/ergonomic-chairs" },
             { label: "Study Chairs", href: "/products/study/study-chairs" },
-            { label: "Office Ergonomic Chairs", href: "/products/office-room/ergonomic-chairs-office" },
+            { label: "Office Revolving Chair", href: "/products/office-room/ergonomic-chairs-office" },
             { label: "Office Computer Tables", href: "/products/office-room/computer-tables" },
         ],
     },
@@ -104,7 +104,7 @@ const sections = [
         links: [
             { label: "2 Door Wardrobes", href: "/products/storage-furniture/2-door-wardrobes" },
             { label: "3+ Door Wardrobes", href: "/products/storage-furniture/3-plus-door-wardrobes" },
-            { label: "Chest of Drawers", href: "/products/storage-furniture/chest-of-drawers-storage" },
+            { label: "Kerala Box", href: "/products/storage-furniture/chest-of-drawers-storage" },
             { label: "Shoe Racks", href: "/products/storage-furniture/shoe-racks-storage" },
         ],
     },
@@ -113,7 +113,7 @@ const sections = [
         title: "Pillars",
         links: [
             { label: "Teak Wood Pillars", href: "/products/pillars/teak-wood-pillars" },
-            { label: "Rosewood Pillars", href: "/products/pillars/rosewood-pillars" },
+            { label: "Wild Jack & Jackwood Pillars", href: "/products/pillars/wild-jack-and-jackwood-pillars" },
             { label: "Sheesham Pillars", href: "/products/pillars/sheesham-pillars" },
             { label: "Sandstone Pillars", href: "/products/pillars/sandstone-pillars" },
             { label: "Carved Pillars", href: "/products/pillars/carved-pillars" },

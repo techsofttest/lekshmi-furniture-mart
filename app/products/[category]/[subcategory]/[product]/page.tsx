@@ -31,14 +31,7 @@ export default function ProductDetailPage() {
     .slice(0, 4);
 
   // Find subcategory name for breadcrumb
-  let subcategoryName = subcategorySlug.replace(/-/g, " ");
-  for (const sub of category.subcategories) {
-    const item = sub.items.find((i) => i.slug === subcategorySlug);
-    if (item) {
-      subcategoryName = item.name;
-      break;
-    }
-  }
+  const subcategoryName = category.subcategories.find((s) => s.slug === subcategorySlug)?.name || subcategorySlug.replace(/-/g, " ");
 
   const waMessage = encodeURIComponent(
     `Hello Lekshmi Furniture Mart, I am interested in the "${product.name}" under the ${category.name} collection. Please share details on customizations.`
@@ -53,7 +46,7 @@ export default function ProductDetailPage() {
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 flex items-center gap-2 text-xs font-sans text-[#2A1C14]/50 flex-wrap">
           <Link href="/" className="hover:text-[#592915] transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href={`/products/${categorySlug}/${category.subcategories[0].items[0].slug}`} className="hover:text-[#592915] transition-colors">{category.name}</Link>
+          <Link href={`/products/${categorySlug}/all`} className="hover:text-[#592915] transition-colors">{category.name}</Link>
           <ChevronRight className="w-3 h-3" />
           <Link href={`/products/${categorySlug}/${subcategorySlug}`} className="hover:text-[#592915] transition-colors capitalize">
             {subcategoryName}

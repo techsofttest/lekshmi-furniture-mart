@@ -26,7 +26,7 @@ const testimonials = [
     name: "Maria Joseph",
     location: "Kottayam",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-    text: "From the first consultation to installation, everything was perfect. The rosewood sofa is not just furniture, it's an heirloom we'll pass down to our children.",
+    text: "From the first consultation to installation, everything was perfect. The wild jack and jackwood sofa is not just furniture, it's an heirloom we'll pass down to our children.",
     rating: 5,
   },
 ];

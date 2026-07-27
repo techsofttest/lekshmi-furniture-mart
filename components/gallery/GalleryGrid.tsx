@@ -27,7 +27,7 @@ const galleryItems: GalleryItem[] = [
     src: "/products/vintage-sofa.jpg",
     title: "Imperial Vintage Sofa",
     category: "living",
-    wood: "Solid Rosewood",
+    wood: "Solid Wild Jack & Jackwood",
     description: "Intricately hand-carved floral motifs with royal crimson fabric.",
   },
   {
@@ -35,7 +35,7 @@ const galleryItems: GalleryItem[] = [
     src: "/main-cagory/bed-room.png",
     title: "Royal Canopy Bedstead",
     category: "bedroom",
-    wood: "Kerala Rosewood",
+    wood: "Kerala Wild Jack & Jackwood",
     description: "Classic high-poster frame with structural cross-beams.",
   },
   {
@@ -59,7 +59,7 @@ const galleryItems: GalleryItem[] = [
     src: "/products/dining-table.jpg",
     title: "Artisanal Live-Edge Set",
     category: "dining",
-    wood: "Solid Rosewood",
+    wood: "Solid Wild Jack & Jackwood",
     description: "Natural organic contours paired with brushed iron legs.",
   },
   {
@@ -67,7 +67,7 @@ const galleryItems: GalleryItem[] = [
     src: "/custom-product/c-chair.png",
     title: "Sculpted Lounge Chair",
     category: "custom",
-    wood: "Premium Rosewood",
+    wood: "Premium Wild Jack & Jackwood",
     description: "Bespoke fluid curves showcasing premium hardwood joinery.",
   },
   {
@@ -83,7 +83,7 @@ const galleryItems: GalleryItem[] = [
     src: "/custom-product/cupbord.png",
     title: "Heritage Arch Cabinet",
     category: "custom",
-    wood: "Kerala Rosewood",
+    wood: "Kerala Wild Jack & Jackwood",
     description: "Traditional Kerala arch motif door paneling.",
   },
 ];

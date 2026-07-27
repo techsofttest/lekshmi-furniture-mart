@@ -18,9 +18,6 @@ export default function Home() {
       {/* 2. Bento Categories Section */}
       <BentoCategories />
 
-      {/* Heritage Projects Carousel */}
-      <HeritageProjects />
-
       {/* Highlights Section */}
       <Highlights />
 
@@ -36,19 +33,14 @@ export default function Home() {
       {/* 6. Brand History Section */}
       <BrandHistory />
 
+      {/* Heritage Projects Carousel */}
+      <HeritageProjects />
+
       {/* 7. Testimonials Section */}
       <Testimonials />
-      
+
       {/* 8. CTA Section */}
       <CTA />
-
-      {/* Future Homepage Sections will stack below here.
-        Examples:
-        <FeaturedCategories />
-        <BespokeProcess />
-        <Testimonials />
-        <Footer />
-      */}
     </div>
   );
 }

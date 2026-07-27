@@ -33,7 +33,7 @@ const projects: Project[] = [
     clientType: "Hospitality Resort",
     year: "2003 - 2006",
     description:
-      "Precision restoration of structural heritage columns, rosewood rafters, and bespoke wood paneling for lakeside heritage cottages.",
+      "Precision restoration of structural heritage columns, wild jack and jackwood rafters, and bespoke wood paneling for lakeside heritage cottages.",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const projects: Project[] = [
     clientType: "Private Residential",
     year: "2018 - 2019",
     description:
-      "Bespoke bedroom suites, solid Rosewood main doors with handcarved details, and a 12-seater royal teak dining set matching custom ceiling rafters.",
+      "Bespoke bedroom suites, solid Wild Jack & Jackwood main doors with handcarved details, and a 12-seater royal teak dining set matching custom ceiling rafters.",
   },
 ];
 

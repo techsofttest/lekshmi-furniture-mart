@@ -14,7 +14,7 @@ export default function CoreValues({ containerVariants, itemVariants }: CoreValu
       icon: Award,
       title: "Uncompromising Quality",
       description:
-        "Every log of Teak and Rosewood is personally inspected. We utilize seasoned heartwood and traditional joinery for lifelong durability.",
+        "Every log of Teak, Wild Jack, and Jackwood is personally inspected. We utilize seasoned heartwood and traditional joinery for lifelong durability.",
     },
     {
       icon: Compass,

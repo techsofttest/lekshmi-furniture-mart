@@ -11,7 +11,7 @@ export default function GalleryPage() {
       <InnerPageHero
         kicker="DESIGN PORTFOLIO"
         title="Our Curated Showcase"
-        subtitle="of Teak & Rosewood Masterworks"
+        subtitle="of Teak, Wild Jack & Jackwood Masterworks"
       />
 
       {/* Gallery Grid Section */}

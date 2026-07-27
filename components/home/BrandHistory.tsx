@@ -55,7 +55,7 @@ export default function BrandHistory() {
             <p>
               Our roots were established in 1990 with <span className="font-semibold text-white tracking-wide">"Vishnu Furniture Mart"</span>, started by two brothers. Under this legacy, we successfully executed major resort projects including Marari Beach and Coconut Lagoon.
 
-              In 2010, <span className="font-semibold text-white tracking-wide">"Lakshmi Furniture Mart"</span> was established as the next branch, building upon the collaborative legacy and artisanal excellence cultivated over three decades.
+              In 2010, <span className="font-semibold text-white tracking-wide">"Lekshmi Furniture Mart"</span> was established as the next branch, building upon the collaborative legacy and artisanal excellence cultivated over three decades.
 
               From the selection of premium woods to the final meticulous finish, we specialize in bespoke furniture, allowing you to bring your unique vision to life.
             </p>
