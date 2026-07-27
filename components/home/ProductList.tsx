@@ -23,7 +23,7 @@ const topSellers = [
   },
   {
     title: "Corner Stand",
-    image: "/products/living/corner-stand.jpg",
+    image: "/products/living/corner-stand1.png",
     href: "/products/living/shoe-racks/premium-wooden-corner-stand"
   },
 ];
