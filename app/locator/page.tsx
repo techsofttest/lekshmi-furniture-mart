@@ -24,7 +24,7 @@ const stores = [
         name: "Lekshmi Furniture Mart",
         address: "NH 66, Bypass Road, Irinjalakuda, Thrissur, Kerala – 680 121",
         phone: "+91 90744 77358",
-        whatsapp: "919074477358",
+        whatsapp: "919447101197",
         email: "info@lekshmifurniture.com",
         hours: [
             { days: "Monday – Saturday", time: "9:30 AM – 6:00 PM" },
@@ -298,7 +298,7 @@ export default function LocatorPage() {
                     </div>
                     <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
                         <Link
-                            href="https://wa.me/919074477358"
+                            href="https://wa.me/919447101197"
                             target="_blank"
                             id="visit-whatsapp-cta"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-[#592915] text-white text-[10px] uppercase tracking-widest font-bold hover:bg-[#2A1C14] transition-all"

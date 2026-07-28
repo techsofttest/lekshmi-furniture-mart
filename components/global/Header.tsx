@@ -68,7 +68,7 @@ const navigationData = [
                 { name: "Wardrobes", href: "/products/bedroom/wardrobes", image: "/sub-cat/bed-room5.jpg" },
                 { name: "Bedside Tables", href: "/products/bedroom/bedside-tables", image: "/sub-cat/bed-room6.jpg" },
                 { name: "Dressers & Mirrors", href: "/products/bedroom/dressers-and-mirrors", image: "/sub-cat/bed-room7.jpg" },
-                { name: "Kerala Box", href: "/products/bedroom/chest-of-drawers", image: "/sub-cat/bed-room8.jpg" },
+                // { name: "Kerala Box", href: "/products/bedroom/chest-of-drawers", image: "/sub-cat/bed-room8.jpg" },
                 { name: "Dressing Stand", href: "/products/bedroom/dressing-stand", image: "/sub-cat/bed-room9.jpg" },
                 { name: "Dressing Screen", href: "/products/bedroom/dressing-stand", image: "/sub-cat/bed-room9.jpg" },
             ],
@@ -141,7 +141,7 @@ const navigationData = [
                 title: "Smart Storage",
                 subtitle: "Maximize your space",
                 price: "View Solutions",
-                image: "/sub-cat/storage-furniture1.jpg",
+                image: "/sub-cat/storage-furniture2.jpg",
                 href: "/products/storage-furniture/all",
             },
         },
@@ -325,7 +325,7 @@ export default function Header() {
                                         <span>info@lekshmifurniture.com</span>
                                     </div>
                                 </div>
-                                <Link href="https://wa.me/919074477358" target="_blank" className="px-6 py-2 bg-[#592915] text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#2A1C14] transition-all relative z-10">
+                                <Link href="https://wa.me/919447101197" target="_blank" className="px-6 py-2 bg-[#592915] text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#2A1C14] transition-all relative z-10">
                                     WhatsApp Us
                                 </Link>
                             </div>
@@ -395,7 +395,7 @@ export default function Header() {
                         {/* Mobile: right side — WhatsApp + hamburger */}
                         <div className="xl:hidden flex items-center gap-2 sm:gap-3">
                             <Link
-                                href="https://wa.me/919074477358"
+                                href="https://wa.me/919447101197"
                                 target="_blank"
                                 className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 bg-[#592915] text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#2A1C14] transition-all"
                             >
@@ -507,12 +507,12 @@ export default function Header() {
 
                 {/* Drawer footer */}
                 <div className="shrink-0 px-6 py-4 border-t border-gray-100 bg-white space-y-3">
-                    <a href="tel:+919074477358" className="flex items-center gap-2.5 text-sm text-[#2A1C14] font-sans">
+                    <a href="tel:+919447101197" className="flex items-center gap-2.5 text-sm text-[#2A1C14] font-sans">
                         <Phone className="w-4 h-4 text-[#592915]" />
                         +91 90744 77358
                     </a>
                     <Link
-                        href="https://wa.me/919074477358"
+                        href="https://wa.me/919447101197"
                         target="_blank"
                         onClick={closeDrawer}
                         className="flex items-center justify-center gap-2 w-full py-3 bg-[#592915] text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#2A1C14] transition-all"

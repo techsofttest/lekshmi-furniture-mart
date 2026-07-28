@@ -42,7 +42,7 @@ const contactDetails = [
         icon: Phone,
         label: "Call Us",
         lines: ["+91 90744 77358"],
-        href: "tel:+919074477358",
+        href: "tel:+919447101197",
         linkLabel: "Call Now →",
     },
     {
@@ -178,7 +178,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                     <Link
-                        href="https://wa.me/919074477358"
+                        href="https://wa.me/919447101197"
                         target="_blank"
                         id="contact-whatsapp-cta"
                         className="shrink-0 inline-flex items-center gap-2 px-8 py-3 bg-white text-[#592915] text-[10px] uppercase tracking-widest font-bold hover:bg-[#F4ECE1] transition-all"

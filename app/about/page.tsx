@@ -5,6 +5,7 @@ import LegacyStory from "@/components/about/LegacyStory";
 import MaterialsHighlight from "@/components/about/MaterialsHighlight";
 import CoreValues from "@/components/about/CoreValues";
 import CTA from "@/components/home/CTA";
+import WoodTypes from "@/components/home/WoodTypes";
 
 export default function AboutPage() {
   const containerVariants = {
@@ -39,6 +40,9 @@ export default function AboutPage() {
 
       {/* Materials & Woodcraft Highlight */}
       <MaterialsHighlight />
+
+      {/*New Wood Types Section */}
+      <WoodTypes />
 
       {/* Values Section */}
       <CoreValues

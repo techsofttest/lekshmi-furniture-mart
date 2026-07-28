@@ -17,7 +17,7 @@ export default function ArchitectCTA() {
           We specialize in custom prototyping, scale manufacturing, and structural columns matching blueprints. Join forces with us to bring heritage quality to your clients.
         </p>
         <div className="pt-4">
-          <PrimaryButton href="https://wa.me/919074477358" variant="dark">
+          <PrimaryButton href="https://wa.me/919447101197" variant="dark">
             Submit Architect Enquiry
           </PrimaryButton>
         </div>

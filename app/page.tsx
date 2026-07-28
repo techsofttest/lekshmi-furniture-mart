@@ -8,38 +8,42 @@ import Customization from "@/components/home/Customization";
 import BrandHistory from "@/components/home/BrandHistory";
 import CTA from "@/components/home/CTA";
 import Testimonials from "@/components/home/Testimonials";
+import WoodTypes from "@/components/home/WoodTypes";
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen bg-background">
-      {/* 1. Hero Section */}
+      {/*Hero Section */}
       <HeroSlider />
 
-      {/* 2. Bento Categories Section */}
+      {/*Bento Categories Section */}
       <BentoCategories />
 
       {/* Highlights Section */}
       <Highlights />
 
-      {/* 3. About Section */}
+      {/*About Section */}
       <About />
 
-      {/* 4. Product List Section */}
+      {/*Product List Section */}
       <ProductList />
 
-      {/* 5. Customization Section */}
+      {/*New Wood Types Section */}
+      <WoodTypes />
+
+      {/*Customization Section */}
       <Customization />
 
-      {/* 6. Brand History Section */}
+      {/*Brand History Section */}
       <BrandHistory />
 
-      {/* Heritage Projects Carousel */}
+      {/*Heritage Projects Carousel */}
       <HeritageProjects />
 
-      {/* 7. Testimonials Section */}
+      {/*Testimonials Section */}
       <Testimonials />
 
-      {/* 8. CTA Section */}
+      {/*CTA Section */}
       <CTA />
     </div>
   );

@@ -50,8 +50,8 @@ const footerLinks = [
         title: "CONNECT",
         items: [
             { type: "contact", icon: Mail, text: "collaborations@lekshmifurniture.in", href: "mailto:collaborations@lekshmifurniture.in" },
-            // { type: "contact", icon: Phone, text: "+91 9074477358", href: "tel:+919074477358" },
-            { type: "contact", icon: MessageCircle, text: "+91 9074477358 (WhatsApp)", href: "https://wa.me/919074477358" },
+            // { type: "contact", icon: Phone, text: "+91 9447101197", href: "tel:+919447101197" },
+            { type: "contact", icon: MessageCircle, text: "+91 9447101197 (WhatsApp)", href: "https://wa.me/919447101197" },
             { type: "hours", text: "Monday - Saturday: 9:30 am - 5:30 pm" },
             { type: "hours", text: "Sunday: By Appointment Only" },
         ],

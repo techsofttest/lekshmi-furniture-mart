@@ -139,7 +139,7 @@ export default function BentoCategories() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <ParallaxImage src="/main-cagory/brown-sofa.jpg" alt="Resort & Heritage Projects" />
+            <ParallaxImage src="/custom-product/c-chair.png" alt="Resort & Heritage Projects" />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/55 transition-colors duration-500" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
               <span className="text-white/80 font-sans text-xs uppercase tracking-[0.25em] mb-1.5 font-light">PREMIUM</span>

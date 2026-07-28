@@ -33,7 +33,7 @@ export const categoriesData: Category[] = [
   {
     name: "Living",
     slug: "living",
-    description: "Immerse yourself in handcrafted luxury. From premium Teak Wood coffee tables to custom TV consoles, elevate your central living space with heirloom-grade wooden artistry.",
+    description: "Immerse yourself in handcrafted luxury. From premium hardwood coffee tables to custom TV consoles, elevate your central living space with heirloom-grade wooden artistry.",
     image: "/sub-cat/living1.jpg",
     subcategories: [
       { name: "Coffee Tables", slug: "coffee-tables" },
@@ -44,12 +44,12 @@ export const categoriesData: Category[] = [
       { name: "Bookshelves", slug: "bookshelves" },
       { name: "Display Units", slug: "display-units" },
       { name: "Shoe Racks", slug: "shoe-racks" }
-    ]
+    ],
   },
   {
     name: "Bedroom",
     slug: "bedroom",
-    description: "Sanctuaries of absolute rest. Discover our signature solid Plavu, Anjili Wood, and Teak Wood beds, meticulously carved bedside tables, and bespoke master wardrobes designed for life.",
+    description: "Sanctuaries of absolute rest. Discover our signature solid hardwood beds, meticulously carved bedside tables, and bespoke master wardrobes designed for life.",
     image: "/sub-cat/bed-room1.jpg",
     subcategories: [
       { name: "King Size Beds", slug: "king-size-beds" },
@@ -61,24 +61,24 @@ export const categoriesData: Category[] = [
       { name: "Dressers & Mirrors", slug: "dressers-and-mirrors" },
       { name: "Kerala Box", slug: "chest-of-drawers" },
       { name: "Dressing Stand", slug: "dressing-stand" }
-    ]
+    ],
   },
   {
     name: "Dining",
     slug: "dining",
-    description: "Feast in grandeur. Crafted from single-slab Teak Wood, Anjili Wood, and Plavu, our dining tables and chairs create a dramatic, unforgettable setting for gatherings that endure across generations.",
+    description: "Feast in grandeur. Crafted from single-slab hardwoods, our dining tables and chairs create a dramatic, unforgettable setting for gatherings that endure across generations.",
     image: "/sub-cat/dining1.jpg",
     subcategories: [
       { name: "4 Seater Dining Sets", slug: "4-seater-dining-sets" },
       { name: "6 Seater Dining Sets", slug: "6-seater-dining-sets" },
       { name: "Dining Tables", slug: "dining-tables" },
       { name: "Dining Chairs & Benches", slug: "dining-chairs-and-benches" }
-    ]
+    ],
   },
   {
     name: "Study",
     slug: "study",
-    description: "Focus met with refined heritage. Elevate your creative or professional sanctuary with organic executive desks, ergonomic Teak Wood chairs, and bespoke filing libraries.",
+    description: "Focus met with refined heritage. Elevate your creative or professional sanctuary with organic executive desks, ergonomic hardwood chairs, and bespoke filing libraries.",
     image: "/sub-cat/study1.jpg",
     subcategories: [
       { name: "Study Tables", slug: "study-tables" },
@@ -89,7 +89,7 @@ export const categoriesData: Category[] = [
       { name: "Study Chairs", slug: "study-chairs" },
       { name: "Bookshelves", slug: "bookshelves-study" },
       { name: "Filing Cabinets", slug: "filing-cabinets" }
-    ]
+    ],
   },
   {
     name: "Storage Furniture",
@@ -101,12 +101,12 @@ export const categoriesData: Category[] = [
       { name: "3+ Door Wardrobes", slug: "3-plus-door-wardrobes" },
       { name: "Kerala Box", slug: "chest-of-drawers-storage" },
       { name: "Shoe Racks", slug: "shoe-racks-storage" }
-    ]
+    ],
   },
   {
     name: "Pillars",
     slug: "pillars",
-    description: "Architectural monuments for your home. Carved in Teak Wood, Anjili Wood, or Plavu, our pillars serve as majestic structural and decorative details.",
+    description: "Architectural monuments for your home. Carved in premium hardwoods, our pillars serve as majestic structural and decorative details.",
     image: "/sub-cat/pillars1.jpg",
     subcategories: [
       { name: "Teak Wood Pillars", slug: "teak-wood-pillars" },
@@ -148,7 +148,7 @@ export const productsData: Product[] = [
   // Bedroom
   {
     slug: "royal-teak-king-bed",
-    name: "Royal Teak King Size Bed",
+    name: "Royal King Size Bed",
     description: "Premium handcrafted solid Teak Wood king size bed. Crafted with traditional joinery, this bed features elegant headboard carving and robust structure built to last generations.",
     images: ["/products/bed-room/bed.jpg"],
     details: {
@@ -164,7 +164,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "heritage-jackwood-queen-bed",
-    name: "Heritage Jackwood Queen Size Bed",
+    name: "Heritage Queen Size Bed",
     description: "Elegant solid Plavu queen size bed. Offers a warm golden-brown hue that deepens beautifully over time. Built with maximum comfort and stability in mind.",
     images: ["/products/bed-room/bed.png"],
     details: {
@@ -212,7 +212,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "premium-bedroom-wardrobe-2",
-    name: "Premium Plavu Wardrobe",
+    name: "Premium Wardrobe",
     description: "Superior quality wardrobe handcrafted from solid Plavu with customized drawers and safe storage compartments.",
     images: ["/sub-cat/bed-room cubbord-2.jpg"],
     details: {
@@ -228,7 +228,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "modern-teak-king-bed",
-    name: "Modern Teak King Bed",
+    name: "Modern King Bed",
     description: "A gorgeous modern interpretation of the classic poster bed, carved using premium Teak Wood.",
     images: ["/sub-cat/bed-room1.jpg"],
     details: {
@@ -244,7 +244,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "elegant-plavu-queen-bed",
-    name: "Elegant Plavu Queen Bed",
+    name: "Elegant Queen Bed",
     description: "Beautifully styled Plavu wood queen bed highlighting the golden-yellow natural grain flow.",
     images: ["/sub-cat/bed-room2.jpg"],
     details: {
@@ -276,7 +276,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "storage-bed-comfort",
-    name: "Anjili Wood Storage Bed",
+    name: "Storage Bed",
     description: "Extremely robust queen size bed crafted in Anjili Wood featuring heavy-duty underbed storage drawer modules.",
     images: ["/sub-cat/bed-room4.jpg"],
     details: {
@@ -310,7 +310,7 @@ export const productsData: Product[] = [
   // Living
   {
     slug: "traditional-easy-chair-charu-kasera",
-    name: "Traditional Easy Chair (Charu Kasera)",
+    name: "Traditional Easy Chair",
     description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation. Handcrafted in premium Teak Wood with high-quality cane weaving.",
     images: ["/products/living/charu-kasera1.jpeg"],
     details: {
@@ -326,7 +326,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "premium-wooden-corner-stand",
-    name: "Premium Wooden Corner Stand",
+    name: "Premium Corner Stand",
     description: "Stunning multi-tier corner display unit. Designed to optimize space while displaying your prized books, heirlooms, or decorative pieces.",
     images: ["/products/living/corner-stand1.png"],
     details: {
@@ -342,7 +342,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "teak-coffee-table-living",
-    name: "Classic Teak Coffee Table",
+    name: "Classic Coffee Table",
     description: "Beautifully structured coffee table in solid Teak Wood featuring a low profile design and smooth finish.",
     images: ["/sub-cat/living1.jpg"],
     details: {
@@ -358,7 +358,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "living-end-table-premium",
-    name: "Premium Plavu End Table",
+    name: "Premium End Table",
     description: "Compact accent end table carved in Plavu wood. Ideal companion next to sofas or lounge chairs.",
     images: ["/sub-cat/living2.jpg"],
     details: {
@@ -374,7 +374,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "display-shelves-living",
-    name: "Anjili Wood Display Unit",
+    name: "Display Unit",
     description: "Stunning open display unit carved in Anjili Wood with traditional horizontal separator planks.",
     images: ["/sub-cat/Display Shelves living.jpg"],
     details: {
@@ -390,7 +390,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "open-bookshelf-living",
-    name: "Teak Wood Library Bookshelf",
+    name: "Library Bookshelf",
     description: "Exquisite multi-tiered open bookshelf handcrafted using solid Teak Wood.",
     images: ["/sub-cat/shelves.jpg"],
     details: {
@@ -424,7 +424,7 @@ export const productsData: Product[] = [
   // Dining
   {
     slug: "single-slab-teak-dining-table",
-    name: "Single-Slab Teak Dining Table",
+    name: "Single-Slab Dining Table",
     description: "A spectacular dining table made from a curated single slab of premium aged Teak Wood. Showcases gorgeous live edges and dramatic wood grains.",
     images: ["/products/dining/dining-table.jpg"],
     details: {
@@ -440,7 +440,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "classic-dining-display-shelves",
-    name: "Classic Dining Room Display Shelves",
+    name: "Classic Display Shelves",
     description: "Premium Anjili Wood display rack with open shelving, ideal for displaying fine chinaware, glassware, or decorative plates in the dining area.",
     images: ["/products/dining/display-shelves.jpeg", "/products/dining/display-shelves2.jpeg"],
     details: {
@@ -456,7 +456,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "royal-heritage-dining-bench",
-    name: "Royal Heritage Dining Bench & Chair",
+    name: "Royal Heritage Dining Bench",
     description: "Bespoke solid Teak Wood long chair and bench designed for dining areas. Provides comfortable seating with elegant classic back spindles.",
     images: ["/products/chair/long wooden chair.jpeg"],
     details: {
@@ -472,7 +472,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "teak-4-seater-dining-set",
-    name: "Imperial Teak 4 Seater Dining Set",
+    name: "Imperial 4 Seater Dining Set",
     description: "Traditional Teak Wood dining table accompanied by four solid handcrafted matching chairs.",
     images: ["/sub-cat/dining1.jpg"],
     details: {
@@ -488,7 +488,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "premium-6-seater-dining-set",
-    name: "Royal Plavu 6 Seater Dining Set",
+    name: "Royal 6 Seater Dining Set",
     description: "Majestic six-seater dining set handcrafted in solid Plavu. Perfect for larger family gatherings.",
     images: ["/sub-cat/dining2.jpg"],
     details: {
@@ -504,7 +504,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "dining-display-shelves-classic",
-    name: "Dining Display Shelves Classic",
+    name: "Classic Dining Display Shelves",
     description: "Ornamental open shelving cabinet designed specifically for showcasing culinary items in dining rooms. Crafted in Anjili Wood.",
     images: ["/sub-cat/Display Shelves- dining.jpg"],
     details: {
@@ -520,25 +520,25 @@ export const productsData: Product[] = [
   },
 
   // Study
-  {
-    slug: "study-wooden-chair",
-    name: "Traditional Teak Study Chair",
-    description: "Ergonomically contoured Teak Wood study chair built for study tables and writing desk companion setups.",
-    images: ["/products/chair/long wooden chair.jpeg"],
-    details: {
-      Material: "Teak Wood",
-      Dimensions: "18\"W x 20\"D x 36\"H",
-      Finish: "Satin Polyurethane",
-      Assembly: "Fully assembled",
-      Warranty: "5-Year Warranty",
-      Craftsmanship: "Hand-turned spindle rails"
-    },
-    categorySlug: "study",
-    subcategorySlug: "study-chairs"
-  },
+  // {
+  //   slug: "study-wooden-chair",
+  //   name: "Traditional Study Chair",
+  //   description: "Ergonomically contoured Teak Wood study chair built for study tables and writing desk companion setups.",
+  //   images: ["/products/chair/long wooden chair.jpeg"],
+  //   details: {
+  //     Material: "Teak Wood",
+  //     Dimensions: "18\"W x 20\"D x 36\"H",
+  //     Finish: "Satin Polyurethane",
+  //     Assembly: "Fully assembled",
+  //     Warranty: "5-Year Warranty",
+  //     Craftsmanship: "Hand-turned spindle rails"
+  //   },
+  //   categorySlug: "study",
+  //   subcategorySlug: "study-chairs"
+  // },
   {
     slug: "classic-study-table",
-    name: "Classic Teak Study Table",
+    name: "Classic Study Table",
     description: "Beautifully designed writing desk with custom drawers and a spacious top, crafted in Teak Wood.",
     images: ["/sub-cat/study table.jpg"],
     details: {
@@ -554,7 +554,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "computer-desk-study",
-    name: "Plavu Computer Desk",
+    name: "Computer Desk",
     description: "Sturdy computer desk built in Plavu featuring a pull-out keyboard tray and cable management slots.",
     images: ["/sub-cat/study1.jpg"],
     details: {
@@ -570,7 +570,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "executive-desk-study",
-    name: "Bespoke Teak Executive Desk",
+    name: "Bespoke Executive Desk",
     description: "Premium office study desk featuring dual side drawers cabinets and a large writing table surface.",
     images: ["/sub-cat/study2.jpg"],
     details: {
@@ -586,7 +586,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "ergonomic-standing-desk",
-    name: "Anjili Wood Standing Desk",
+    name: "Standing Desk",
     description: "Beautiful height-adjustable desk featuring a gorgeous thick Anjili Wood tabletop.",
     images: ["/sub-cat/Standing Desks.jpg"],
     details: {
@@ -602,7 +602,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "study-table-compact",
-    name: "Compact Plavu Writing Desk",
+    name: "Compact Writing Desk",
     description: "Space-saving writing table designed in solid Plavu, perfect for apartments or small study rooms.",
     images: ["/sub-cat/study3.jpg"],
     details: {
@@ -620,7 +620,7 @@ export const productsData: Product[] = [
   // Storage Furniture
   {
     slug: "traditional-kerala-storage-pathayam",
-    name: "Traditional Kerala Storage Pathayam",
+    name: "Traditional Storage Pathayam",
     description: "Large solid Plavu storage chest inspired by traditional grain pathayams. Excellent storage potential for bedrooms or hallways.",
     images: ["/products/others/ari-pathayam1.jpeg"],
     details: {
@@ -636,7 +636,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "wardrobe-3plus-door",
-    name: "Teak 3+ Door Master Wardrobe",
+    name: "3+ Door Master Wardrobe",
     description: "Grand master bedroom wardrobe featuring multiple clothes rails, integrated shelving, and solid Teak Wood doors.",
     images: ["/sub-cat/storage-furniture2.jpg"],
     details: {
@@ -652,7 +652,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "shoe-rack-storage-unit",
-    name: "Plavu Utility Shoe Rack",
+    name: "Utility Shoe Rack",
     description: "Sturdy multi-level shoe organizer designed with closed doors in Plavu wood for hallways and entryways.",
     images: ["/sub-cat/storage-furniture4.jpg"],
     details: {
@@ -670,7 +670,7 @@ export const productsData: Product[] = [
   // Pillars
   {
     slug: "hand-carved-teak-wood-pillar",
-    name: "Hand-Carved Teak Wood Pillar",
+    name: "Hand-Carved Pillar",
     description: "Architectural masterpiece pillar carved from a single log of premium Teak Wood. Features South Indian temple design details.",
     images: ["/products/pillar/pillar1.jpeg", "/products/pillar/pillar2.jpeg"],
     details: {
@@ -686,7 +686,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "anjili-wood-pillar-premium",
-    name: "Anjili Wood Carved Pillar",
+    name: "Carved Pillar",
     description: "Majestic structural pillar handcrafted from aged Anjili Wood, featuring traditional spiral engravings.",
     images: ["/sub-cat/pillars2.jpg"],
     details: {
@@ -702,7 +702,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "plavu-wood-pillar-heritage",
-    name: "Heritage Plavu Wood Pillar",
+    name: "Heritage Pillar",
     description: "Exquisite structural pillar crafted in Plavu, showcasing the beautiful golden hue typical of jackwood.",
     images: ["/sub-cat/pillars3.jpg"],
     details: {
@@ -718,7 +718,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "irumullu-wood-pillar-classic",
-    name: "Irumullu Wood Pillar",
+    name: "Classic Pillar",
     description: "An authentic structural or decorative pillar carved from dense, heavy Irumullu wood.",
     images: ["/sub-cat/pillars8.jpg"],
     details: {
@@ -736,7 +736,7 @@ export const productsData: Product[] = [
   // Office Room
   {
     slug: "executive-desk-office",
-    name: "Professional Office Executive Desk",
+    name: "Professional Executive Desk",
     description: "A grand desk in solid Teak Wood featuring custom filing shelves and cabinet spaces.",
     images: ["/sub-cat/office-room04.jpg"],
     details: {
@@ -752,7 +752,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "computer-table-office",
-    name: "Office Computer Table",
+    name: "Computer Table",
     description: "Sturdy and practical computer workstation crafted in Plavu wood with specialized keyboard drawer.",
     images: ["/sub-cat/office-room01.jpg"],
     details: {
@@ -768,7 +768,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "standing-desk-office",
-    name: "Office Standing Desk Top",
+    name: "Standing Desk Top",
     description: "An adjustable desk module top carved in Anjili Wood for healthy working options.",
     images: ["/sub-cat/office-room03.jpg"],
     details: {
@@ -786,7 +786,7 @@ export const productsData: Product[] = [
   // Others
   {
     slug: "traditional-kerala-amadapetti-box",
-    name: "Traditional Kerala Amadapetti Box",
+    name: "Traditional Amadapetti Box",
     description: "A classic heritage jewelry box (Amadapetti) handcrafted with brass accents from Teak Wood. Features secret drawers.",
     images: ["/products/others/amadapetti.png"],
     details: {
@@ -802,7 +802,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "antique-wooden-ari-pathayam",
-    name: "Antique Wooden Rice Chest (Ari Pathayam)",
+    name: "Antique Rice Chest (Ari Pathayam)",
     description: "A massive, authentic Plavu chest traditionally used for storing grain. Handcrafted from heavy wood slabs.",
     images: ["/products/others/ari-pathayam1.jpeg"],
     details: {
@@ -850,7 +850,7 @@ export const productsData: Product[] = [
   },
   {
     slug: "traditional-easy-chair-charu-kasera-others",
-    name: "Traditional Easy Chair (Charu Kasera)",
+    name: "Traditional Easy Chair",
     description: "The classic Kerala Charu Kasera. Designed with extended reclining armrests for supreme relaxation. Handcrafted in premium Teak Wood with natural cane backing.",
     images: ["/products/living/charu-kasera1.jpeg"],
     details: {
