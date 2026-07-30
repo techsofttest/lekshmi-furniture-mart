@@ -136,6 +136,7 @@ const navigationData = [
                 { name: "3+ Door Wardrobes", href: "/products/storage-furniture/3-plus-door-wardrobes", image: "/sub-cat/storage-furniture2.jpg" },
                 { name: "Kerala Box", href: "/products/storage-furniture/chest-of-drawers-storage", image: "/sub-cat/storage-furniture3.jpg" },
                 { name: "Shoe Racks", href: "/products/storage-furniture/shoe-racks-storage", image: "/sub-cat/storage-furniture4.jpg" },
+                { name: "Chest of Drawers", href: "/products/storage-furniture/chest-of-drawers", image: "/sub-cat/storage-furniture5.jpg" },
             ],
             promo: {
                 title: "Smart Storage",

@@ -189,6 +189,39 @@ export default function ContactPage() {
                 </motion.div>
             </section>
 
+            {/* ── Google Map ── */}
+            <section className="w-full bg-[#FCFAF8] border-t border-gray-100">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                    className="max-w-[1600px] mx-auto px-4 lg:px-8 xl:px-16 py-16"
+                >
+                    <div className="mb-8">
+                        <span className="text-[#592915] font-sans text-[10px] uppercase tracking-[0.25em] font-bold block mb-3">
+                            Find Us
+                        </span>
+                        <h2 className="text-xl md:text-2xl font-serif text-[#592915] relative pb-4 inline-block">
+                            Our Location
+                            <span className="absolute bottom-0 left-0 w-14 h-[1.5px] bg-[#592915]/30" />
+                        </h2>
+                    </div>
+                    <div className="w-full overflow-hidden rounded-sm border border-gray-200">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.713773420974!2d76.3538708!3d9.7902685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b087b0053d1a15d%3A0x1883754d4e279376!2sLekshmi%20furniture%20mart!5e0!3m2!1sen!2sin!4v1785412227009!5m2!1sen!2sin"
+                            width="100%"
+                            height="450"
+                            style={{ border: 0, display: 'block' }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            title="Lekshmi Furniture Mart Location"
+                        />
+                    </div>
+                </motion.div>
+            </section>
+
             {/* ── Contact Form ── */}
             <section className="py-20 relative overflow-hidden bg-[#1A120E]">
                 {/* Background Image Layer */}

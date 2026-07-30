@@ -9,6 +9,7 @@ import BrandHistory from "@/components/home/BrandHistory";
 import CTA from "@/components/home/CTA";
 import Testimonials from "@/components/home/Testimonials";
 import WoodTypes from "@/components/home/WoodTypes";
+import GoogleReviews from "@/components/home/GoogleReviews";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
 
       {/*Testimonials Section */}
       <Testimonials />
+
+      {/*Google Reviews Section */}
+      <GoogleReviews />
 
       {/*CTA Section */}
       <CTA />
